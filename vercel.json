@@ -1,0 +1,22 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.inkbabatattoo.com" }],
+      "destination": "https://inkbabatattoo.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "inkbabatattoos.com" }],
+      "destination": "https://inkbabatattoo.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.inkbabatattoos.com" }],
+      "destination": "https://inkbabatattoo.com/:path*",
+      "permanent": true
+    }
+  ]
+}

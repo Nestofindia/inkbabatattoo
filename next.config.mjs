@@ -16,6 +16,13 @@ const nextConfig = {
     ],
   },
   async redirects() {
+    const canonicalHost = 'inkbabatattoo.com';
+    const alternateHosts = [
+      'www.inkbabatattoo.com',
+      'inkbabatattoos.com',
+      'www.inkbabatattoos.com',
+    ];
+
     return [
       {
         // Legacy/short path -> canonical piercing route (was a client <Navigate> in the SPA)
@@ -23,6 +30,12 @@ const nextConfig = {
         destination: '/piercing-services',
         permanent: true,
       },
+      ...alternateHosts.map((host) => ({
+        source: '/:path*',
+        has: [{ type: 'host', value: host }],
+        destination: `https://${canonicalHost}/:path*`,
+        permanent: true,
+      })),
     ];
   },
 };

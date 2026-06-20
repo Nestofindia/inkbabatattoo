@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import {
   DEFAULT_OG_IMAGE,
+  DEFAULT_OG_IMAGE_HEIGHT,
+  DEFAULT_OG_IMAGE_PATH,
+  DEFAULT_OG_IMAGE_WIDTH,
   GEO_COORDINATES,
   SITE_ADDRESS,
   SITE_EMAIL,
@@ -55,9 +58,9 @@ export function toMetadata(seo: PageSeoConfig): Metadata {
       description: seo.description,
       images: [
         {
-          url: DEFAULT_OG_IMAGE,
-          width: 1200,
-          height: 630,
+          url: DEFAULT_OG_IMAGE_PATH,
+          width: DEFAULT_OG_IMAGE_WIDTH,
+          height: DEFAULT_OG_IMAGE_HEIGHT,
           alt: `${SITE_NAME} — tattoo & piercing studio in Arambol, Goa`,
         },
       ],

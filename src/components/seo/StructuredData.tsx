@@ -37,27 +37,6 @@ export function PageStructuredData({ seo }: { seo: PageSeoConfig }) {
   );
 }
 
-const FEATURED_REVIEWS = [
-  {
-    author: 'Luka',
-    reviewBody:
-      'Best Studio in Goa probably also in India! Really clean and professional and a lot of Western artist!',
-    ratingValue: 5,
-  },
-  {
-    author: 'Mayuri Yeram',
-    reviewBody:
-      'My friends got his very first tattoo in InkBaba studio. Great experience. Special thanks to sachin and bhumika.',
-    ratingValue: 5,
-  },
-  {
-    author: 'Shweta Kohli',
-    reviewBody:
-      'Absolutely in love with the tattoo! Done by guest artist Niculin who was extremely skilled and quick.',
-    ratingValue: 5,
-  },
-];
-
 /** Site-wide schemas emitted once in the root layout: TattooParlor, Organization, WebSite. */
 export function GlobalStructuredData() {
   const localBusiness = {
@@ -80,25 +59,6 @@ export function GlobalStructuredData() {
     email: SITE_EMAIL,
     priceRange: '$$',
     knowsAbout: [...SEO_KEYWORDS_MASTER],
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      bestRating: '5',
-      worstRating: '1',
-      ratingCount: '150',
-      reviewCount: '150',
-    },
-    review: FEATURED_REVIEWS.map((r) => ({
-      '@type': 'Review',
-      author: { '@type': 'Person', name: r.author },
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: String(r.ratingValue),
-        bestRating: '5',
-      },
-      reviewBody: r.reviewBody,
-      itemReviewed: { '@type': 'TattooParlor', name: SITE_NAME },
-    })),
     address: {
       '@type': 'PostalAddress',
       streetAddress: SITE_ADDRESS.streetAddress,
@@ -168,28 +128,18 @@ export function GlobalStructuredData() {
     description: SITE_TAGLINE,
     publisher: { '@id': `${SITE_URL}/#organization` },
     inLanguage: 'en-IN',
-    potentialAction: [
-      {
-        '@type': 'SearchAction',
-        target: {
-          '@type': 'EntryPoint',
-          urlTemplate: `${SITE_URL}/gallery?q={search_term_string}`,
-        },
-        'query-input': 'required name=search_term_string',
+    potentialAction: {
+      '@type': 'ReserveAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_URL}/contact`,
+        actionPlatform: [
+          'http://schema.org/DesktopWebPlatform',
+          'http://schema.org/MobileWebPlatform',
+        ],
       },
-      {
-        '@type': 'ReserveAction',
-        target: {
-          '@type': 'EntryPoint',
-          urlTemplate: `${SITE_URL}/contact`,
-          actionPlatform: [
-            'http://schema.org/DesktopWebPlatform',
-            'http://schema.org/MobileWebPlatform',
-          ],
-        },
-        name: 'Book tattoo or piercing appointment',
-      },
-    ],
+      name: 'Book tattoo or piercing appointment',
+    },
   };
 
   return (

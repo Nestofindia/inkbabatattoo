@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: HOME_TITLE,
     description: SITE_TAGLINE,
-    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630, alt: SITE_NAME }],
+    images: [{ url: '/tattoo.jpeg', width: 437, height: 417, alt: SITE_NAME }],
   },
   twitter: {
     card: 'summary_large_image',

@@ -23,8 +23,11 @@ export const SITE_URL =
   (process.env.NEXT_PUBLIC_SITE_URL as string | undefined)?.replace(/\/$/, '') ||
   CANONICAL_SITE_URL;
 
-export const DEFAULT_OG_IMAGE =
-  'https://inkbaba.s3.ap-south-1.amazonaws.com/Logo/Inkbaba+tattoo+house+black+.png';
+/** Same-origin OG image — actual dimensions avoid social preview warnings */
+export const DEFAULT_OG_IMAGE_PATH = '/tattoo.jpeg';
+export const DEFAULT_OG_IMAGE_WIDTH = 437;
+export const DEFAULT_OG_IMAGE_HEIGHT = 417;
+export const DEFAULT_OG_IMAGE = `${CANONICAL_SITE_URL}${DEFAULT_OG_IMAGE_PATH}`;
 
 /** Same-origin favicon for Google Search (see /public/favicon*.png) */
 export const SITE_FAVICON_URL = `${CANONICAL_SITE_URL}/favicon-192x192.png`;
