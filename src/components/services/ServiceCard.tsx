@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Instagram } from 'lucide-react';
+// import { Instagram } from 'lucide-react';
 import LazyImage from '../shared/LazyImage';
 
 interface ServiceCardProps {
@@ -32,8 +32,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   category,
   categoryHref,
   subtitle,
-  instagramHandle,
-  instagramHref,
 }) => {
   return (
     <motion.div
@@ -86,6 +84,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
             ))}
           </ul>
 
+          {/* Artist Instagram — hidden for now
           {instagramHandle && instagramHref ? (
             <a
               href={instagramHref}
@@ -97,6 +96,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
               @{instagramHandle.replace(/^@/, '')}
             </a>
           ) : null}
+          */}
         </div>
       </div>
     </motion.div>

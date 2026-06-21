@@ -8,6 +8,10 @@ import ServiceCard from '@/components/services/ServiceCard';
 import PiercingWorkGallery from '@/components/services/PiercingWorkGallery';
 import LazyBackground from '@/components/shared/LazyBackground';
 import { PIERCING_WORK_ITEMS } from '@/config/serviceWork';
+import { getSeasonArtist } from '@/config/seasonBookings';
+import ArtistSeasonBooking from '@/components/booking/ArtistSeasonBooking';
+
+const CHAKTI_SEASON = getSeasonArtist('chakti');
 
 const servicesData = [
   {
@@ -70,6 +74,10 @@ const PiercingServicesView: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {CHAKTI_SEASON?.bookingEnabled && (
+        <ArtistSeasonBooking artist={CHAKTI_SEASON} anchorId="season-booking-chakti" />
+      )}
 
       <PiercingWorkGallery items={PIERCING_WORK_ITEMS} />
     </PageTransition>

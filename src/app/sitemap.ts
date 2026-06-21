@@ -46,5 +46,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // Guest season artist booking pages
+  entries.push(
+    ...['satish', 'omkar'].map((slug) => ({
+      url: getCanonicalUrl(`/upcoming-season/${slug}`),
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as ChangeFreq,
+      priority: 0.85,
+    }))
+  );
+
   return entries;
 }

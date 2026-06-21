@@ -3,10 +3,10 @@
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Instagram } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import LazyImage from '../shared/LazyImage';
 import type { TattooArtistProfile } from '../../config/tattooArtists.types';
-import { tattooArtistInstagramUrl, tattooArtistPath } from '../../config/tattooArtists.paths';
+import { tattooArtistPath } from '../../config/tattooArtists.paths';
 
 interface TattooArtistPreviewCardProps {
   artist: TattooArtistProfile;
@@ -50,6 +50,7 @@ const TattooArtistPreviewCard: React.FC<TattooArtistPreviewCardProps> = ({ artis
         </div>
       </Link>
 
+      {/* Artist Instagram — hidden for now
       <div className="border-t border-traditional-200 px-6 py-3 sm:px-8">
         <a
           href={tattooArtistInstagramUrl(artist.instagramHandle)}
@@ -61,6 +62,7 @@ const TattooArtistPreviewCard: React.FC<TattooArtistPreviewCardProps> = ({ artis
           @{artist.instagramHandle}
         </a>
       </div>
+      */}
     </motion.article>
   );
 };

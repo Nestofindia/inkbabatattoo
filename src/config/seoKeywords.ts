@@ -167,6 +167,8 @@ export type SeoKeywordPage =
   | 'contact'
   | 'testimonials'
   | 'faq'
+  | 'tattoo-care'
+  | 'piercing-care'
   | 'terms'
   | 'artist'
   | 'category'
@@ -225,6 +227,18 @@ const PAGE_KEYWORD_EXTRAS: Record<SeoKeywordPage, readonly string[]> = {
     'how much tattoo Goa',
     'tattoo healing tips',
     'tattoo age limit India',
+  ],
+  'tattoo-care': [
+    'tattoo aftercare instructions',
+    'tattoo healing tips Goa',
+    'before tattoo appointment tips',
+    'tattoo care first week',
+  ],
+  'piercing-care': [
+    'piercing aftercare saline',
+    'body piercing healing tips',
+    'before piercing preparation',
+    'piercing care Goa studio',
   ],
   terms: ['tattoo cancellation policy', 'studio liability tattoo'],
   artist: ['book tattoo artist Goa', 'artist portfolio Ink Baba'],

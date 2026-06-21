@@ -120,12 +120,11 @@ const AboutView: React.FC = () => {
                 transition={{ duration: 0.6 }}
                 className="relative order-2 lg:order-1"
               >
-                <div className="relative rounded-3xl overflow-hidden shadow-traditional max-w-md mx-auto lg:mx-0">
+                <div className="relative rounded-3xl overflow-hidden shadow-traditional w-full aspect-[4/5]">
                   <LazyImage
-                    // src="https://www.idc.iitb.ac.in/sites/default/files/IMG_20170308_140302.jpg"
-                    src="https://ik.imagekit.io/wt9brvtz5/feature/Kums_sir.jpg"
+                    src="https://ik.imagekit.io/wt9brvtz5/feature/kum_sir.jpeg"
                     alt="Kums P Kumresan — Faculty of Design & Innovation, IIT Bombay"
-                    className="w-full aspect-[4/5] object-cover object-top"
+                    className="absolute inset-0 w-full h-full object-cover object-top"
                   />
                 </div>
               </motion.div>

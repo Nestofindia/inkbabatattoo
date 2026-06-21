@@ -25,6 +25,17 @@ const nextConfig = {
 
     return [
       {
+        // Legacy guest route → Mo Naga artist page
+        source: '/upcoming-season/mo-naga',
+        destination: '/tattoo-services/hand-poke/mo-naga',
+        permanent: true,
+      },
+      {
+        source: '/tattoo-services/handpoke-tribal/:path*',
+        destination: '/tattoo-services/hand-poke/mo-naga',
+        permanent: true,
+      },
+      {
         // Legacy/short path -> canonical piercing route (was a client <Navigate> in the SPA)
         source: '/piercing',
         destination: '/piercing-services',

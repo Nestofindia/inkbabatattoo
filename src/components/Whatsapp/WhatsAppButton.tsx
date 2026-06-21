@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { GOOGLE_REVIEWS_URL, WHATSAPP_URL } from '../../config/links';
+import ChatBotWidget from '../chatbot/ChatBotWidget';
 
 const cardBase =
   'flex flex-col items-center justify-center bg-white rounded-lg shadow-[0_4px_16px_rgba(0,0,0,0.1)] border border-traditional-100 w-[4.25rem] sm:w-[4.5rem] p-[10px] gap-0.5';
@@ -97,16 +98,21 @@ const WhatsAppButton = () => {
         </div>
       </div>
 
-      {/* WhatsApp — bottom left */}
-      <a
-        href={WHATSAPP_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed z-50 bottom-4 left-3 sm:bottom-6 sm:left-6 bg-green-500 text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-green-600 hover:scale-105 transition-all duration-300"
-        aria-label="Chat on WhatsApp"
-      >
-        <FaWhatsapp className="w-6 h-6 sm:w-7 sm:h-7" />
-      </a>
+      {/* Chat + WhatsApp — bottom left */}
+      <div className="fixed z-50 bottom-4 left-3 sm:bottom-6 sm:left-6 flex flex-col items-start gap-3">
+        <div className="relative">
+          <ChatBotWidget />
+        </div>
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 text-white p-3 sm:p-4 rounded-full shadow-lg hover:bg-green-600 hover:scale-105 transition-all duration-300"
+          aria-label="Chat on WhatsApp"
+        >
+          <FaWhatsapp className="w-6 h-6 sm:w-7 sm:h-7" />
+        </a>
+      </div>
     </>
   );
 };

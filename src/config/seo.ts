@@ -255,6 +255,38 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
     priority: 0.8,
     lastmod: '2026-05-25',
   },
+  '/tattoo-care': {
+    path: '/tattoo-care',
+    title: `Tattoo Before & After Care${suffix}`,
+    description:
+      'Prepare for your tattoo and heal properly afterward. Before and after care tips from Ink Baba Tattoo House in Arambol, Goa.',
+    keywords: getPageKeywords('tattoo-care'),
+    h1: 'Tattoo Care Guide',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Tattoo Care', path: '/tattoo-care' },
+    ],
+    schemaType: 'WebPage',
+    changefreq: 'monthly',
+    priority: 0.75,
+    lastmod: '2026-06-20',
+  },
+  '/piercing-care': {
+    path: '/piercing-care',
+    title: `Piercing Before & After Care${suffix}`,
+    description:
+      'Before and after piercing care instructions for clean healing. Professional piercing aftercare from Ink Baba Tattoo House, Arambol, Goa.',
+    keywords: getPageKeywords('piercing-care'),
+    h1: 'Piercing Care Guide',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Piercing Care', path: '/piercing-care' },
+    ],
+    schemaType: 'WebPage',
+    changefreq: 'monthly',
+    priority: 0.75,
+    lastmod: '2026-06-20',
+  },
   '/terms-and-conditions': {
     path: '/terms-and-conditions',
     title: `Terms & Conditions${suffix}`,

@@ -39,7 +39,8 @@ export const TASSOS_ZACH: TattooArtistProfile = {
   categorySlug: "abstract-realism",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/abstract_realism/tassos_zach/Tassos%20Zach.webp?updatedAt=1779478110486",
-  instagramHandle: "tassoszach",
+  // instagramHandle: "tassoszach",
+  instagramHandle: "",
   about: [
     "Tassos Zach is a world-renowned tattoo artist from Greece, celebrated as one of the leading masters of Abstract Realism. His style beautifully blends emotion, structure, and movement, creating tattoos that feel like living works of art.",
     "Through his unique approach, Tassos brings together the precision of realism with the freedom of abstract expression, crafting pieces that speak to both the heart and the mind. Every tattoo he creates carries depth, contrast, and story, reflecting his fine-art background and innovative vision.",
@@ -132,7 +133,8 @@ export const KALI: TattooArtistProfile = {
   categorySlug: "bioorganic",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/BIOORGANIC/Kali/Kali.heic?updatedAt=1779478313923",
-  instagramHandle: "kalitattoo",
+  // instagramHandle: "kalitattoo",
+  instagramHandle: "",
   about: [
     "Kali is a London-based tattoo artist revered for his expertise in Biomechanical and Bio-Organic tattoo styles. Known for transforming skin into surreal landscapes of muscle, machine, metal, and life, Kali's work fuses anatomy with technology in visually striking ways.",
     "His tattoos are bold, 3D, and immersive — layered with depth, movement, and anatomical flow. Whether it's metallic limbs, organic circuitry, or alien muscle forms, Kali designs tattoos that move with the body and create the illusion of living, breathing machines under the skin.",
@@ -720,7 +722,8 @@ export const PRAMOD_DESHMUKH: TattooArtistProfile = {
   categorySlug: "calligraphy",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/CALLIGRAPHY/pramod_deshmukh/Pramod%20Deshmukh.JPG?updatedAt=1779479152388",
-  instagramHandle: "calligramod",
+  // instagramHandle: "calligramod",
+  instagramHandle: "",
   about: [
     "Pramod Deshmukh is one of India's most respected tattoo artists in the field of calligraphy and script-based tattoos. With a deep understanding of letterforms, language, and emotional flow, he transforms names, quotes, and poetry into living pieces of art.",
     "His tattoos reflect discipline, cultural richness, and artistic elegance — from Devanagari and Urdu to English and experimental fonts. Whether it's a single powerful word or an entire verse, Pramod's strokes carry soul.",
@@ -861,7 +864,8 @@ export const DASHA_PICTOGRAM: TattooArtistProfile = {
   categorySlug: "dot-work",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/DOTWORK/dasha_pictogram/Dasha%20Pictogram.jpg?updatedAt=1779479413988",
-  instagramHandle: "samsara.pictogram",
+  // instagramHandle: "samsara.pictogram",
+  instagramHandle: "",
   about: [
     "Dasha Pictogram is a highly experienced tattoo artist based in the UK, known for her long-standing dedication to handpoke tattooing and sacred geometric design. With many years of consistent work, she has mastered the art of slow, detailed, and meditative ink.",
     "Her tattoos are created using a needle by hand (no machine) — resulting in a unique texture, soft skin flow, and deeply personal energy. She specializes in geometric symmetry, dotwork shading, and spiritual alignment — often combining ancient patterns with minimal contemporary forms.",
@@ -978,7 +982,8 @@ export const JINN_TONY: TattooArtistProfile = {
   categorySlug: "dot-work",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/DOTWORK/jinn_tony/Jinn%20Tony.JPG?updatedAt=1779479600023",
-  instagramHandle: "jinn_tony",
+  // instagramHandle: "jinn_tony",
+  instagramHandle: "",
   about: [
     "Jinn Tony is a Russia-based tattoo artist who has mastered the meditative and intricate art of Dotwork tattoos. Known for his precise shading, symbolic patterns, and sacred geometry influence, Jinn creates tattoos that are as spiritually meaningful as they are visually stunning.",
     "Each piece by Jinn is made of thousands of hand-placed dots, forming mandalas, ancient symbols, and body-flowing compositions. His work is calm, calculated, and deeply intentional — appealing to those who view tattooing as both art and ritual.",
@@ -1047,7 +1052,8 @@ export const MANU_GARCIA: TattooArtistProfile = {
   categorySlug: "geometric",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/GEOMETRIC/manu_garcia/Manu%20Garcia.jpg?updatedAt=1779481319753",
-  instagramHandle: "freakgarcia",
+  // instagramHandle: "freakgarcia",
+  instagramHandle: "",
   about: [
     "Manu Garcia, also known as Freak Garcia Leonam, is a multi-talented artist from Brazil, known worldwide for his powerful blend of Geometry, Pattern, and Blackwork tattoos. With a deep sense of rhythm and flow, Manu brings the same creative energy to both tattooing and music, perfectly uniting Ink + Sound into a single artistic identity.",
     "His tattoo work is known for its mathematical precision, clean symmetry, and strong contrast, often combining intricate sacred geometry with free-flowing abstract forms. Each design reflects balance, emotion, and movement — much like the beats he creates as a DJ.",
@@ -1128,7 +1134,8 @@ export const JESSI_JAMES: TattooArtistProfile = {
   categorySlug: "geometric",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/GEOMETRIC/jwssi_james/Jwssi%20james.JPG?updatedAt=1779481070129",
-  instagramHandle: "jessijamestattoo",
+  // instagramHandle: "jessijamestattoo",
+  instagramHandle: "",
   about: [
     "Jessi James is a highly respected tattoo artist from the UK, best known for her bold, strong geometric tattoos, intricate mandala designs, and precise pattern-based body art. Her work is a fusion of strength, symmetry, and sacred form — built for clients who love structure, power, and aesthetic balance.",
     "With years of experience and a growing reputation across the tattoo community, Jessi has carved out a solid name for herself as a specialist in geometric and mandala work. Her tattoos are visually striking — made with clean lines, sharp contrasts, and flow that follows the natural body form.",
@@ -1311,7 +1318,8 @@ export const GIADA: TattooArtistProfile = {
   categorySlug: "geometric",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/GEOMETRIC/Giada/Giada.jpg?updatedAt=1779480783242",
-  instagramHandle: "giadablk",
+  // instagramHandle: "giadablk",
+  instagramHandle: "",
   about: [
     "Giada is a calm, intuitive, and highly respected tattoo artist based in London, best known for her freehand geometric tattoos that gracefully follow the natural flow of the human body. She creates each design with mindfulness, often without a stencil, resulting in tattoos that feel organic, balanced, and alive.",
     "Her approach reflects her personality — peaceful, patient, and precise. Clients love working with her not only for her artistry but also for the soothing, thoughtful tattoo experience she offers.",
@@ -1477,7 +1485,8 @@ export const DANA_SHA: TattooArtistProfile = {
   categorySlug: "geometric",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/GEOMETRIC/dana_sha/Dana%20Sha.jpg?updatedAt=1779480175256",
-  instagramHandle: "danasha.tattoo",
+  // instagramHandle: "danasha.tattoo",
+  instagramHandle: "",
   about: [
     "Dana Sha is a world-renowned tattoo artist from Israel, widely respected for her mastery in ornamental and geometric tattooing — especially her ability to transform large scars into beautifully balanced body art.",
     "Her tattoos don't just decorate; they heal, empower, and restore symmetry to the human form. Using sacred geometry, ornamental symmetry, and fine detail, Dana creates tattoos that cover physical scars and emotional stories — turning trauma into confidence.",
@@ -1720,7 +1729,8 @@ export const ARNE: TattooArtistProfile = {
   categorySlug: "hand-poke",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/arne/Arne.jpg?updatedAt=1779481807507",
-  instagramHandle: "arn_o_ne",
+  // instagramHandle: "arn_o_ne",
+  instagramHandle: "",
   about: [
     "Arne is a Spanish tattoo artist celebrated for his clean, precise, and deeply meditative handpoke tattoos. With a mastery over freehand symmetrical drawing, he creates tattoos that flow organically with the body — often without stencils, directly guided by his instinct and artistic eye.",
     "His handpoke technique is so refined, it resembles machine-level clarity, while still offering the softness and intimacy of manual application. Arne specializes in sacred patterns, minimalist forms, and spiritual geometry, making his tattoos both aesthetic and deeply meaningful.",
@@ -1849,7 +1859,8 @@ export const AKITSU_TOMO: TattooArtistProfile = {
   categorySlug: "japanese",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/JAPANESE/akitsu_tomo/Akitsu%20tomo.jpg?updatedAt=1779482020455",
-  instagramHandle: "akitsu_tomo",
+  // instagramHandle: "akitsu_tomo",
+  instagramHandle: "",
   about: [
     "Akitsu Tomo is a revered name in the world of traditional Japanese tattooing, practicing the sacred art of Tebori — a hand-poked technique dating back centuries. Based in Japan, his tattoos are rich in mythology, spiritual flow, and precise symbolism.",
     "Dragons, koi, samurai, and florals come alive under his hands — blending culture with craftsmanship. A tattoo from Tomo is not just art; it's heritage inked into your skin.",
@@ -2049,7 +2060,8 @@ export const VASIL_KURAKHCHISHVILI: TattooArtistProfile = {
   categorySlug: "japanese",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/JAPANESE/vasil_kurakhchishvili/Vasil%20kurakhchishvili.jpg?updatedAt=1779482224275",
-  instagramHandle: "vasovasiko",
+  // instagramHandle: "vasovasiko",
+  instagramHandle: "",
   about: [
     "Vasil Kurakhchishvili is a Türkiye-based tattoo artist globally admired for his mastery of traditional Japanese style tattooing. His work is inspired by classic Irezumi motifs like dragons, koi fish, samurai, geishas, and mythological beasts — each telling a rich story through bold composition and deep symbolism.",
     "He merges old-world storytelling with new-age technique, using strong linework, dynamic shading, and vibrant colours that flow with the body's shape. Vasil's tattoos are more than just art — they are spiritual armor, worn with pride and purpose.",
@@ -2262,7 +2274,8 @@ export const JULIAKAY: TattooArtistProfile = {
   categorySlug: "minimalistic",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/MINIMILISTIC/juliakay/Juliakay.jpg?updatedAt=1779482484048",
-  instagramHandle: "juliakaytattoos",
+  // instagramHandle: "juliakaytattoos",
+  instagramHandle: "",
   about: [
     "Juliakay, based in Germany, is an experimental tattoo artist known for her conceptual, fine-line, and abstract tattoos that often appear as if they are dissolving into the skin. Her work is soft yet emotional, minimal yet layered — telling poetic visual stories in surreal form.",
     "Using ultra-fine lines, fragmented imagery, and shadow-play, Juliakay creates tattoos that reflect inner states, emotional depth, and subtle transformation. Her pieces are deeply personal, often blending symbolism, surreal elements, and intentional imperfection.",
@@ -2337,7 +2350,8 @@ export const ASH_HARRISON: TattooArtistProfile = {
   categorySlug: "nomadic",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/NOMADIC/ash_harison/Ash%20harison.jpg?updatedAt=1779483250125",
-  instagramHandle: "villkat.arts",
+  // instagramHandle: "villkat.arts",
+  instagramHandle: "",
   about: [
     "Ash Harrison is one of the most experienced tattoo artists in the world, known globally for his deep-rooted expertise in Viking symbols, Norse mythology, and Celtic knotwork designs. A true nomadic tattoo artist, Ash travels across countries and cultures, spreading his unique ink philosophy that combines ancient spirituality, geometry, and warrior symbolism.",
     "His tattoos are rich in historical meaning — from Odin's runes to intricate Celtic spirals — crafted with fine detail and spiritual precision. Clients from around the world seek Ash's work for its authenticity, power, and connection to ancestral identity.",
@@ -2406,7 +2420,8 @@ export const ALAN_GOG: TattooArtistProfile = {
   categorySlug: "ornamental",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/ORNAMENTAL/aan_gog/-Alan%20Gog.jpg?updatedAt=1779483542560",
-  instagramHandle: "gog_u_magog",
+  // instagramHandle: "gog_u_magog",
+  instagramHandle: "",
   about: [
     "Alan Gog is a world-renowned tattoo artist from Israel, celebrated for his exceptional skill in Ornamental tattoo art. His creations reflect a perfect balance of precision, spirituality, and elegance — making every tattoo a piece of living geometry.",
     "Known for his clean lines, sacred patterns, and refined composition, Alan's work transcends body art, blending culture and design into timeless expressions. Artists and collectors worldwide admire his mastery and unique artistic identity in the tattoo industry.",
@@ -2654,7 +2669,8 @@ export const BEVE: TattooArtistProfile = {
   categorySlug: "ornamental",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/ORNAMENTAL/beve/Beve.jpg?updatedAt=1779483742749",
-  instagramHandle: "bevetattoo",
+  // instagramHandle: "bevetattoo",
+  instagramHandle: "",
   about: [
     "Beve is a Spain-based tattoo artist celebrated for her mastery in ornamental tattoos, blending fine-line precision with graceful symmetry. Her work often features mandalas, sacred geometry, lace patterns, and flowing designs that complement the body's natural form.",
     "Delicate yet powerful, Beve's tattoos speak to those who appreciate timeless detail and feminine elegance in ink. Every piece is hand-drawn, carefully placed, and created with meditative focus — making each tattoo a wearable piece of art.",
@@ -2831,7 +2847,8 @@ export const PALLADA: TattooArtistProfile = {
   categorySlug: "ornamental",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/ORNAMENTAL/pallada/Pallada.jpg?updatedAt=1779484540588",
-  instagramHandle: "pallada.is.love",
+  // instagramHandle: "pallada.is.love",
+  instagramHandle: "",
   about: [
     "Pallada is a Russian-based ornamental tattoo artist, celebrated for her deep, geometric, and body-accentuating tattoo designs. But her creativity doesn't stop at ink — she's also a DJ and professional model, blending visual art, music, and style into a full cultural experience.",
     "Her tattoos reflect the rhythm of her soul — sacred patterns, mandalas, and flowing geometry that enhance the body's natural form. As a DJ, she creates sonic energy, and as a model, she brings her visual identity into the fashion world. Pallada is a true multi-disciplinary artist, where ink, sound, and image unite.",
@@ -3015,7 +3032,8 @@ export const CLODITTA: TattooArtistProfile = {
   categorySlug: "ornamental",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/ORNAMENTAL/cloditta/cloditta.jpg?updatedAt=1779484904473",
-  instagramHandle: "cloditta",
+  // instagramHandle: "cloditta",
+  instagramHandle: "",
   about: [
     "Cloditta is a globally recognized European tattoo artist known for her bold Old School linework blended with intricate ornamental detailing. What truly sets her apart is her unique inspiration drawn from Indian – especially Rajasthani – folk art and figures.",
     "Her tattoos often feature traditional Rajasthani characters, poses, facial expressions, and dress styles, reimagined through a Western tattooing lens. This fusion of cultural storytelling and graphic style makes her work emotionally rich and visually unforgettable.",
@@ -3096,7 +3114,8 @@ export const ADEM_SENTURK: TattooArtistProfile = {
   categorySlug: "realism",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/REALISM/Adem%20Senturk/Adem%20Senturk.jpg?updatedAt=1779535355312",
-  instagramHandle: "ademtattoo",
+  // instagramHandle: "ademtattoo",
+  instagramHandle: "",
   about: [
     "UK-based Adem Senturk is a globally acclaimed Realism Tattoo Artist specializing in hyper-real portraits and lifelike imagery. With over a decade of experience, his work reflects photographic precision, depth, and emotional connection.",
     "Whether it's black and grey or color realism, Adem's tattoos are museum-grade masterpieces — created with care, clarity, and unmatched detail.",
@@ -3212,7 +3231,8 @@ export const ALEX_BELYAKOFF: TattooArtistProfile = {
   categorySlug: "realism",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/REALISM/Alex%20Belyakoff/Alex%20Belyakoff.jpg?updatedAt=1779535468811",
-  instagramHandle: "alexbelyakoff",
+  // instagramHandle: "alexbelyakoff",
+  instagramHandle: "",
   about: [
     "From Russia, Alex Belyakoff brings a rare combination of realistic tattoo artistry and yogic mindfulness. As a certified yoga teacher and a skilled portrait tattoo artist, he offers a calm, intentional experience for clients.",
     "His tattoos capture deep emotional realism while his process promotes breath, presence, and healing. A session with Alex is not just a tattoo — it's a transformational experience.",
@@ -3322,7 +3342,8 @@ export const OLGA_KOROLEVA: TattooArtistProfile = {
   categorySlug: "unique-style",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/UNIQE%20STYLE/Olga%20Koroleva/Olga%20Koroleva.jpg?updatedAt=1779540355534",
-  instagramHandle: "korolevatattoo",
+  // instagramHandle: "korolevatattoo",
+  instagramHandle: "",
   about: [
     "Olga Koroleva is a Russian tattoo artist celebrated for her one-of-a-kind tattoo style that blends mysticism, elegance, and emotional storytelling. Her work defies traditional categories — she creates visual poetry on skin.",
     "From ethereal characters and soft dreamlike forms to surreal symbolism and delicate linework, Olga's tattoos feel like moments taken from a magical world. She designs each piece intuitively, often with a painter's sensibility and a deep emotional layer.",
@@ -3421,7 +3442,8 @@ export const MIRA_PARAMONOVA: TattooArtistProfile = {
   categorySlug: "realism",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/REALISM/mira%20paramonova/mira%20paramonova.jpg?updatedAt=1779538431576",
-  instagramHandle: "miraparamonova_",
+  // instagramHandle: "miraparamonova_",
+  instagramHandle: "",
   about: [
     "Mira Paramonova is a world-renowned Colour Realism tattoo artist, currently based in the UK and Latvia. She is much more than an artist — she's a creative force who bridges the worlds of tattooing, painting, modeling, and social influence.",
     "Mira's tattoo style is vivid, detailed, and emotionally immersive — often described as paintings brought to life on skin. Her hyperrealistic portraits, vibrant colours, and artistic flow have earned her global respect and a massive fan following in the tattoo industry.",
@@ -3485,7 +3507,8 @@ export const SACHIN_AAROTE: TattooArtistProfile = {
   categorySlug: "realism",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/REALISM/Sachin%20Aarote/Sachin%20Aarote.jpg?updatedAt=1779538584224",
-  instagramHandle: "sachinaarote",
+  // instagramHandle: "sachinaarote",
+  instagramHandle: "",
   about: [
     "Sachin Aarote is the founder and creative soul behind InkBaba Tattoo House, one of India's most respected names in the tattoo industry. With over a decade of dedication, he has become a torchbearer of Indian Traditional and Varstyle tattooing — blending folk culture, ancient symbols, and modern storytelling.",
     "His work is deeply rooted in Indian spiritual art, cultural patterns, and ethnic grace. Whether it's a Shivkalin warrior, Warli composition, Sanskrit shloka, or tribal motif, Sachin brings it to life with purpose, precision, and pride.",
@@ -3620,7 +3643,8 @@ export const YOGI: TattooArtistProfile = {
   categorySlug: "traditional",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/TRADITIONAL/YOGI/YOGI.jpg?updatedAt=1779539440096",
-  instagramHandle: "__yogi___",
+  // instagramHandle: "__yogi___",
+  instagramHandle: "",
   about: [
     "YOGI is a visionary Indian tattoo artist known for pioneering Elastic Traditional Tattooing — a unique approach that modernizes ancient Indian motifs with body-centric, free-flowing forms. His work stretches across folk culture, tribal elements, deities, and sacred narratives, all executed with artistic elasticity that moves naturally with the human body.",
     "As an international representative of Indian tattoo culture, YOGI takes the richness of India's past and transforms it into global-ready storytelling ink. Whether it's a bold warrior composition, a spiritual yantra, or fluid tribal bands, his tattoos speak of identity, power, and ancestral pride.",
@@ -3695,7 +3719,8 @@ export const SOY_DAN: TattooArtistProfile = {
   categorySlug: "realism",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/REALISM/Soy%20dan/Soy%20dan.jpg?updatedAt=1779538772526",
-  instagramHandle: "soydantattoo",
+  // instagramHandle: "soydantattoo",
+  instagramHandle: "",
   about: [
     "Soy Dan is a Turkish tattoo artist internationally recognized for his expertise in Colour Realism. With a background in fine arts and a sharp eye for detail, his tattoos look more like oil paintings than ink — featuring depth, dimension, and stunning colour saturation.",
     "From ultra-realistic portraits to cinematic scenes and surreal visuals, Soy Dan transforms skin into living artwork. His understanding of light, shadow, and pigment blending allows him to create breathtaking tattoos that remain vibrant and emotional for years.",
@@ -3836,7 +3861,8 @@ export const NICULIN_GROSS: TattooArtistProfile = {
   categorySlug: "traditional",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/TRADITIONAL/Niculin%20Gross/Niculin%20Gross.jpg?updatedAt=1779539537525",
-  instagramHandle: "niculintattoo_ttt",
+  // instagramHandle: "niculintattoo_ttt",
+  instagramHandle: "",
   about: [
     "Niculin Gross is an American tattoo artist specializing in Traditional tattoo style — bold, timeless, and full of classic symbolism. His work honors the roots of tattooing with strong outlines, limited color palettes, and iconic imagery such as daggers, roses, anchors, skulls, and snakes.",
     "With a focus on clean execution and bold presence, Niculin blends historical authenticity with a modern edge. Every tattoo he does carries the spirit of old-school ink – where less is more, and every line has meaning.",
@@ -4049,7 +4075,8 @@ export const DARIO_D_ALESSIO: TattooArtistProfile = {
   categorySlug: "traditional",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/TRADITIONAL/Dario%20D_Alessio/Dario%20D_Alessio.jpg?updatedAt=1779539649222",
-  instagramHandle: "dario_dalessio",
+  // instagramHandle: "dario_dalessio",
+  instagramHandle: "",
   about: [
     "Dario D'Alessio is a highly respected tattoo artist from Italy, celebrated for his work in classic Old School Traditional tattooing. His tattoos are known for their bold black outlines, minimal yet powerful color palettes, and strong iconic visuals like anchors, swallows, daggers, roses, and hearts — all drawn with timeless energy.",
     "In Italy, Dario is a well-known name in traditional tattoo circles. His work is admired for staying true to the authentic roots of tattooing, reflecting a style that's raw, permanent, and full of character.",
@@ -4262,7 +4289,8 @@ export const ALBERTO_BALBOA: TattooArtistProfile = {
   categorySlug: "traditional",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/TRADITIONAL/Alberto%20balboa/Alberto%20balboa.JPG?updatedAt=1779539749683",
-  instagramHandle: "albertobalboatattoo",
+  // instagramHandle: "albertobalboatattoo",
+  instagramHandle: "",
   about: [
     "Alberto Balboa is a European tattoo artist known for his elegant fusion of ornamental patterns, mandalas, and traditional symbolism. His work is geometrically balanced and spiritually inspired, designed to flow perfectly with the body's form.",
     "If you're drawn to tattoos with symmetry, depth, and a sense of inner balance, Alberto's designs offer timeless beauty and precision.",
@@ -4450,7 +4478,8 @@ export const GUIDO: TattooArtistProfile = {
   categorySlug: "trashpolka",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/TRASHPOLKA/Guido%20/Guido.jpg?updatedAt=1779539868026",
-  instagramHandle: "guido_schmitz_tattoo",
+  // instagramHandle: "guido_schmitz_tattoo",
+  instagramHandle: "",
   about: [
     "Guido is an internationally renowned tattoo artist from Germany, globally respected for his unmatched command over the Trash Polka tattoo style. His work combines chaotic realism, bold red-black contrast, abstract elements, and typographic storytelling — resulting in tattoos that feel like living artworks filled with raw emotion and narrative energy.",
     "A regular presence at top tattoo conventions around the world, Guido is followed by major tattoo brands, collectors, and ink lovers who value the depth and visual drama of his style.",
@@ -4633,7 +4662,8 @@ export const ROMEO: TattooArtistProfile = {
   categorySlug: "tribal",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/TRIBAL/romeo/romeo.jpg?updatedAt=1779540002890",
-  instagramHandle: "romeuribeirotattoo",
+  // instagramHandle: "romeuribeirotattoo",
+  instagramHandle: "",
   about: [
     "Romeo is a Germany-based tattoo artist known for his bold, authentic, and body-centric tribal tattoo designs. His work draws inspiration from ancient tribal cultures, transforming traditional patterns into modern body art that speaks of strength, identity, and spiritual flow.",
     "Romeo's tribal tattoos are not just visual — they're ritualistic and symbolic. He focuses on the natural flow of the body, designing large-scale pieces that move with muscle, shape, and soul. Every curve, spike, and spiral in his work tells a silent story.",
@@ -4744,7 +4774,8 @@ export const MANISH_KADAM: TattooArtistProfile = {
   categorySlug: "typography",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/TYPOGRAPHY/Manish%20Kadam/3.jpg",
-  instagramHandle: "makkadam",
+  // instagramHandle: "makkadam",
+  instagramHandle: "",
   about: [
     "Manish Kadam is a visionary tattoo artist from India, celebrated for his expertise in Typography and Calligraphy Tattoos. But beyond the global styles, Manish is also one of the few artists who is reviving the ancient Marathi Modilipi script through tattooing — bringing heritage and identity directly onto the skin.",
     "His work transforms names, quotes, and emotions into living pieces of script-based art. Whether it's a soft personal message, a bold mantra, or an ancestral name in Modilipi, Manish designs every piece with grace, precision, and a deep respect for cultural roots.",
@@ -4897,7 +4928,8 @@ export const NIKAKUN: TattooArtistProfile = {
   categorySlug: "unique-style",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/UNIQE%20STYLE/Nika/nikakun.jpg?updatedAt=1779540233755",
-  instagramHandle: "_nikakun_",
+  // instagramHandle: "_nikakun_",
+  instagramHandle: "",
   about: [
     "Nikakun is a bold and experimental tattoo artist from Belarus, known for creating tattoos in a completely unique and unclassified style. Her work doesn't follow trends — it sets them. With a distinctive mix of abstract shapes, dreamy illustrations, and surreal forms, Nikakun's art is pure self-expression.",
     "Her tattoos often look like pages from a fantasy journal — emotional, symbolic, and deeply personal. Whether it's a whimsical character, expressive linework, or fluid forms, Nikakun paints on skin with a vision that can't be copied.",
@@ -5122,7 +5154,8 @@ export const STELLA: TattooArtistProfile = {
   categorySlug: "unique-style",
   profileImage:
     "https://ik.imagekit.io/wt9brvtz5/tattoo/UNIQE%20STYLE/Stella/Stella.jpg?updatedAt=1779540448171",
-  instagramHandle: "stellartat",
+  // instagramHandle: "stellartat",
+  instagramHandle: "",
   about: [
     "Stella is a visionary tattoo artist from Russia whose work breaks away from all traditional boundaries. Known for her original and emotionally charged style, Stella transforms abstract ideas into visual poetry on skin.",
     "Her tattoos are filled with dreamlike imagery, symbolism, and deep narrative elements — often blending surreal characters, fine linework, and unexpected artistic textures. Each piece is personal, mysterious, and completely one-of-a-kind.",
@@ -5131,11 +5164,125 @@ export const STELLA: TattooArtistProfile = {
   workItems: STELLA_WORK,
 };
 
+const MO_NAGA_WORK: TattooArtistWorkItem[] = [
+  {
+    id: 1,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/image1.jpeg",
+    alt: "Traditional Naga handpoke tribal tattoo by Mo Naga",
+    title: "Naga Tribal Handpoke",
+  },
+  {
+    id: 2,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/image3.jpeg",
+    alt: "Geometric tribal handpoke tattoo by Mo Naga",
+    title: "Tribal Geometry",
+  },
+  {
+    id: 3,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/image4.jpeg",
+    alt: "Naga-inspired blackwork handpoke tattoo by Mo Naga",
+    title: "Naga Blackwork",
+  },
+  {
+    id: 4,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12a.jpeg",
+    alt: "Tribal handpoke arm bands by Mo Naga",
+    title: "Arm Band Geometry",
+  },
+  {
+    id: 5,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12b.jpeg",
+    alt: "Traditional spear handpoke tattoo by Mo Naga",
+    title: "Spear Motif",
+  },
+  {
+    id: 6,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12e.jpeg",
+    alt: "Tribal chest and sleeve handpoke by Mo Naga",
+    title: "Chest & Sleeve Tribal",
+  },
+  {
+    id: 7,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12a5.jpeg",
+    alt: "Handpoke geometric hand tattoo by Mo Naga",
+    title: "Hand Geometry",
+  },
+  {
+    id: 8,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12a4.jpeg",
+    alt: "Spine tribal handpoke tattoo by Mo Naga",
+    title: "Spine Tribal",
+  },
+  {
+    id: 9,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12a3.jpeg",
+    alt: "Vertical spine diamond handpoke by Mo Naga",
+    title: "Spine Diamonds",
+  },
+  {
+    id: 10,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12a2.jpeg",
+    alt: "Tribal chest spiral handpoke by Mo Naga",
+    title: "Chest Spirals",
+  },
+  {
+    id: 11,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12a1.jpeg",
+    alt: "Minimal concentric circle handpoke by Mo Naga",
+    title: "Concentric Circles",
+  },
+  {
+    id: 12,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12b4.jpeg",
+    alt: "Chest chevron handpoke tattoo by Mo Naga",
+    title: "Chest Chevron",
+  },
+  {
+    id: 13,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12b2.jpeg",
+    alt: "Forearm diamond chain handpoke by Mo Naga",
+    title: "Diamond Chain",
+  },
+  {
+    id: 14,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12b1.jpeg",
+    alt: "Forehead diamond handpoke tattoo by Mo Naga",
+    title: "Forehead Diamond",
+  },
+  {
+    id: 15,
+    src: "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/img12b3.jpeg",
+    alt: "Forearm zigzag tribal handpoke by Mo Naga",
+    title: "Zigzag Band",
+  },
+];
+
+export const MO_NAGA: TattooArtistProfile = {
+  id: "mo-naga",
+  name: "Mo Naga",
+  subtitle: "Handpoke & Tribal Tattoo Artist · Ethnographer (Manipur, India)",
+  countryFlag: "🇮🇳",
+  category: "Hand Poke",
+  categorySlug: "hand-poke",
+  alsoInCategories: [{ name: "Tribal", slug: "tribal" }],
+  profileImage:
+    "https://ik.imagekit.io/wt9brvtz5/tattoo/HANDPOKE/Mo_Naga/mo_nago.jpeg",
+  instagramHandle: "",
+  about: [
+    "Mo Naga is a contemporary tattoo artist and ethnographer from Manipur, dedicated to preserving the fading tattoo traditions of India's Northeast. Belonging to the Uipo tribe — one of the smallest Naga tribes — he has spent years traveling across the region documenting indigenous tattooing practices. His vision extends toward establishing a Tattoo Garden in Manipur to protect rare plants and herbs traditionally used in tattooing, from tools and pigments to healing.",
+    "The tattoo traditions of Northeast India are distinct from those found elsewhere in the country. Rooted in hand-tapping techniques, these practices rely on locally sourced natural materials such as thorns, sticks, leaves, and medicinal plants. Although many traditions have declined over recent decades, Mo Naga is helping revive them by collaborating with village elders, learning ancestral techniques, and passing this knowledge to younger generations.",
+    "Traditional Naga tattoo motifs are deeply inspired by nature — symbols of the sun, moon, plants, birds, and animals — reflecting the spiritual and cultural bond between tribal communities and their environment. Through his work, Mo Naga preserves tattoo practices and encourages renewed appreciation for indigenous heritage, inspiring younger generations through art, graffiti, and contemporary expression.",
+    "By bridging the past and the present, Mo Naga's work highlights the importance of safeguarding cultural identity while fostering respect for nature and traditional knowledge. His mission shows how tattooing can become a tool for cultural preservation, education, and community empowerment.",
+  ],
+  workItems: MO_NAGA_WORK,
+};
+
 /** Tattoo artists featured on /tattoo-services */
 export const TATTOO_ARTISTS: TattooArtistProfile[] = [
   TASSOS_ZACH,
   PALLADA,
   MANISH_KADAM,
+  MO_NAGA,
   KALI,
   MADHAV,
   NIKAKUN,

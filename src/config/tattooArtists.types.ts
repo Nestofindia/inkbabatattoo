@@ -12,6 +12,8 @@ export type TattooArtistProfile = {
   countryFlag: string;
   category: string;
   categorySlug: string;
+  /** Listed under additional existing categories (same artist page, different category routes). */
+  alsoInCategories?: readonly { name: string; slug: string }[];
   profileImage: string;
   about: string[];
   instagramHandle: string;

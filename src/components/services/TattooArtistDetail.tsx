@@ -3,15 +3,20 @@ import { PenTool } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import PiercingWorkGallery from './PiercingWorkGallery';
 import type { TattooArtistProfile } from '../../config/tattooArtists.types';
-import { tattooArtistInstagramUrl } from '../../config/tattooArtists.paths';
 import { toServiceWorkItems } from '../../config/tattooArtists';
 import { galleryCategoryPath } from '../../config/gallery';
+import { getSeasonArtist, isSeasonBookingEnabled } from '../../config/seasonBookings';
+import ArtistSeasonBooking from '../booking/ArtistSeasonBooking';
+// import { tattooArtistInstagramUrl } from '../../config/tattooArtists.paths';
 
 interface TattooArtistDetailProps {
   artist: TattooArtistProfile;
 }
 
 const TattooArtistDetail: React.FC<TattooArtistDetailProps> = ({ artist }) => {
+  const seasonArtist = getSeasonArtist(artist.id);
+  const showBooking = isSeasonBookingEnabled(artist.id) && seasonArtist;
+
   return (
     <>
       <section className="bg-white pt-24 pb-0">
@@ -26,11 +31,11 @@ const TattooArtistDetail: React.FC<TattooArtistDetailProps> = ({ artist }) => {
             icon={<PenTool className="h-8 w-8 text-accent-600" />}
             category={artist.category}
             categoryHref={galleryCategoryPath(artist.category)}
-            instagramHandle={artist.instagramHandle}
-            instagramHref={tattooArtistInstagramUrl(artist.instagramHandle)}
           />
         </div>
       </section>
+
+      {showBooking && seasonArtist && <ArtistSeasonBooking artist={seasonArtist} />}
 
       <PiercingWorkGallery items={toServiceWorkItems(artist)} />
     </>

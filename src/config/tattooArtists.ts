@@ -27,30 +27,61 @@ export { TATTOO_ARTISTS } from './tattooArtists.data';
 
 const SITE_NAME = 'Ink Baba Tattoo House';
 
+function registerArtistInCategory(
+  map: Map<string, TattooCategoryGroup>,
+  artist: TattooArtistProfile,
+  name: string,
+  slug: string,
+) {
+  const profile: TattooArtistProfile = { ...artist, category: name, categorySlug: slug };
+  const existing = map.get(slug);
+  if (existing) {
+    existing.artists.push(profile);
+    return;
+  }
+
+  map.set(slug, {
+    name,
+    slug,
+    artists: [profile],
+    coverImage: artist.profileImage,
+  });
+}
+
 export function getTattooCategories(): TattooCategoryGroup[] {
   const map = new Map<string, TattooCategoryGroup>();
 
   TATTOO_ARTISTS.forEach((artist) => {
-    const existing = map.get(artist.categorySlug);
-    if (existing) {
-      existing.artists.push(artist);
-      return;
-    }
-
-    map.set(artist.categorySlug, {
-      name: artist.category,
-      slug: artist.categorySlug,
-      artists: [artist],
-      coverImage: artist.profileImage,
+    registerArtistInCategory(map, artist, artist.category, artist.categorySlug);
+    artist.alsoInCategories?.forEach(({ name, slug }) => {
+      registerArtistInCategory(map, artist, name, slug);
     });
   });
 
   return Array.from(map.values());
 }
 
+function artistMatchesCategoryName(artist: TattooArtistProfile, categoryName: string): boolean {
+  return (
+    artist.category === categoryName ||
+    Boolean(artist.alsoInCategories?.some((c) => c.name === categoryName))
+  );
+}
+
+function withCategoryContext(
+  artist: TattooArtistProfile,
+  categoryName: string,
+): TattooArtistProfile {
+  if (artist.category === categoryName) return artist;
+  const match = artist.alsoInCategories?.find((c) => c.name === categoryName);
+  return match ? { ...artist, category: match.name, categorySlug: match.slug } : artist;
+}
+
 export function getTattooArtistsByCategoryName(categoryName: string): TattooArtistProfile[] {
   if (!categoryName || categoryName === 'All') return TATTOO_ARTISTS;
-  return TATTOO_ARTISTS.filter((artist) => artist.category === categoryName);
+  return TATTOO_ARTISTS.filter((artist) => artistMatchesCategoryName(artist, categoryName)).map(
+    (artist) => withCategoryContext(artist, categoryName),
+  );
 }
 
 export function searchTattooArtists(query: string, limit = 8): TattooArtistProfile[] {
@@ -61,7 +92,8 @@ export function searchTattooArtists(query: string, limit = 8): TattooArtistProfi
     (artist) =>
       artist.name.toLowerCase().includes(trimmed) ||
       artist.category.toLowerCase().includes(trimmed) ||
-      artist.subtitle.toLowerCase().includes(trimmed),
+      artist.subtitle.toLowerCase().includes(trimmed) ||
+      artist.alsoInCategories?.some((c) => c.name.toLowerCase().includes(trimmed)),
   ).slice(0, limit);
 }
 

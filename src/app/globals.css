@@ -96,6 +96,25 @@
     }
   }
 
+  @keyframes season-ticker-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-season-ticker {
+    animation: season-ticker-scroll 45s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-season-ticker {
+      animation: none;
+    }
+  }
+
   .how-it-works-card {
     @apply p-5 sm:p-6 md:p-7 h-full flex flex-col;
   }

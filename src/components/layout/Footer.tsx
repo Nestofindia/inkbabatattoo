@@ -133,6 +133,24 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link 
+                  href="/tattoo-care" 
+                  className="text-traditional-600 hover:text-accent-500 transition-colors duration-300 flex items-center gap-3 text-lg group font-body"
+                >
+                  <span className="w-2 h-2 bg-accent-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span> 
+                  Tattoo Care
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/piercing-care" 
+                  className="text-traditional-600 hover:text-accent-500 transition-colors duration-300 flex items-center gap-3 text-lg group font-body"
+                >
+                  <span className="w-2 h-2 bg-accent-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span> 
+                  Piercing Care
+                </Link>
+              </li>
+              <li>
+                <Link 
                   href="/terms-and-conditions" 
                   className="text-traditional-600 hover:text-accent-500 transition-colors duration-300 flex items-center gap-3 text-lg group font-body"
                 >
