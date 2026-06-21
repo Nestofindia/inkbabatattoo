@@ -81,7 +81,7 @@ const ChatBotWidget: React.FC = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.96 }}
             transition={{ duration: 0.22 }}
-            className="absolute bottom-full left-0 mb-3 w-[min(340px,calc(100vw-1.5rem))] rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.18)] border border-traditional-200 bg-white flex flex-col max-h-[min(70vh,480px)]"
+            className="absolute bottom-full left-0 mb-3 w-[min(340px,calc(100vw-1.5rem))] rounded-2xl overflow-hidden shadow-[0_12px_40px_rgba(0,0,0,0.18)] border border-traditional-200 bg-white flex flex-col max-h-[min(72vh,500px)]"
             role="dialog"
             aria-label="Ink Baba chat assistant"
           >
@@ -116,7 +116,7 @@ const ChatBotWidget: React.FC = () => {
             </div>
 
             {/* Messages */}
-            <div ref={scrollRef} className="flex-1 overflow-y-auto px-3 py-3 space-y-3 bg-gradient-to-b from-warm-50 to-white min-h-[200px]">
+            <div ref={scrollRef} className="flex-1 min-h-0 overflow-y-auto px-3 py-3 space-y-3 bg-gradient-to-b from-warm-50 to-white">
               {messages.map((msg) => (
                 <div
                   key={msg.id}
@@ -146,13 +146,13 @@ const ChatBotWidget: React.FC = () => {
             </div>
 
             {/* Quick questions */}
-            <div className="shrink-0 border-t border-traditional-100 bg-white px-3 py-3 space-y-2">
+            <div className="shrink-0 border-t border-traditional-100 bg-white px-3 pt-3 pb-4 space-y-2.5">
               {unanswered.length > 0 ? (
                 <>
                   <p className="text-[11px] font-semibold text-traditional-500 uppercase tracking-wide px-0.5">
                     Quick questions
                   </p>
-                  <div className="flex flex-wrap gap-1.5 max-h-36 overflow-y-auto">
+                  <div className="flex flex-wrap gap-1.5 max-h-28 overflow-y-auto">
                     {unanswered.map((item) => (
                       <button
                         key={item.id}
@@ -174,7 +174,7 @@ const ChatBotWidget: React.FC = () => {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-green-500 hover:bg-green-600 text-white text-sm font-medium transition-colors"
+                className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-green-500 hover:bg-green-600 text-white text-sm font-medium transition-colors shrink-0"
               >
                 <FaWhatsapp className="w-4 h-4" />
                 Chat on WhatsApp
