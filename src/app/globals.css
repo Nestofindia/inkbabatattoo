@@ -106,7 +106,7 @@
   }
 
   .animate-season-ticker {
-    animation: season-ticker-scroll 45s linear infinite;
+    animation: season-ticker-scroll 32s linear infinite;
   }
 
   @media (prefers-reduced-motion: reduce) {
