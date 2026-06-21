@@ -5,11 +5,11 @@ export function usePreloadVideos(urls: readonly string[]) {
   const urlKey = urls.join('|');
 
   useEffect(() => {
-    const links = urls.map((href) => {
+    urls.forEach((href) => {
       const existing = document.querySelector<HTMLLinkElement>(
-        `link[rel="preload"][as="video"][href="${href}"]`
+        `link[rel="preload"][as="video"][href="${CSS.escape(href)}"]`
       );
-      if (existing) return existing;
+      if (existing) return;
 
       const link = document.createElement('link');
       link.rel = 'preload';
@@ -17,13 +17,6 @@ export function usePreloadVideos(urls: readonly string[]) {
       link.href = href;
       link.type = 'video/mp4';
       document.head.appendChild(link);
-      return link;
     });
-
-    return () => {
-      links.forEach((link) => {
-        if (link.parentNode) link.parentNode.removeChild(link);
-      });
-    };
-  }, [urlKey]);
+  }, [urlKey, urls]);
 }

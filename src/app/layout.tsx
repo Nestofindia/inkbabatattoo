@@ -10,13 +10,13 @@ import {
   SITE_TAGLINE,
   SITE_URL,
 } from '@/config/seo';
+import { HERO_VIDEO_URL } from '@/config/homeVideos';
 
 const HOME_TITLE = `${SITE_NAME} — Spiritual Tattoo Art in Arambol, Goa`;
 const HOME_DESCRIPTION =
   'Ink Baba Tattoo House in Arambol, Goa — custom spiritual tattoos, mandala art, sacred symbols, and professional piercing. Walk-ins welcome. Book: +91 77190 99888.';
 
-const BANNER_VIDEO =
-  'https://szekpgvomczeswpvthiy.supabase.co/storage/v1/object/public/inkbaba/new_banner_video/Banner%201_1.mp4';
+const BANNER_VIDEO = HERO_VIDEO_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -62,8 +62,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-IN">
       <head>
-        {/* Preload the hero banner video (was a <link rel=preload> in index.html) */}
-        <link rel="preload" as="video" href={BANNER_VIDEO} type="video/mp4" />
+        <link rel="preconnect" href="https://szekpgvomczeswpvthiy.supabase.co" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://szekpgvomczeswpvthiy.supabase.co" />
+        {/* Preload the hero banner video before React hydrates */}
+        <link rel="preload" as="video" href={BANNER_VIDEO} type="video/mp4" fetchPriority="high" />
       </head>
       <body className="flex min-h-screen w-full max-w-full flex-col overflow-x-hidden">
         <GlobalStructuredData />

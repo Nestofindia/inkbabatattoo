@@ -1,20 +1,21 @@
 import React from 'react';
-import LazyVideo from '../shared/LazyVideo';
 import HeroGallerySearch from './HeroGallerySearch';
 import { HERO_VIDEO_URL } from '../../config/homeVideos';
 
 const HeroSection: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-x-hidden">
-      <div className="absolute inset-0 z-0">
-        <LazyVideo
-          eager
+      <div className="absolute inset-0 z-0 bg-traditional-900">
+        <video
           src={HERO_VIDEO_URL}
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          preload="auto"
+          // fetchPriority helps the browser prioritize the hero asset
+          {...({ fetchPriority: 'high' } as React.VideoHTMLAttributes<HTMLVideoElement>)}
+          className="absolute inset-0 h-full w-full object-cover"
         />
 
         <div className="absolute inset-0 bg-black/20" aria-hidden />
