@@ -90,7 +90,9 @@ const ChatBotWidget: React.FC = () => {
                   <Bot className="w-4 h-4" />
                 </div>
                 <div className="min-w-0">
-                  <p className="font-special font-bold text-sm leading-tight truncate">Ink Baba Assistant</p>
+                  <p className="font-heading font-bold text-base leading-tight truncate tracking-wide">
+                    Ink Baba Assistant
+                  </p>
                   <p className="text-[11px] text-traditional-300">Quick answers · Arambol, Goa</p>
                 </div>
               </div>
@@ -141,7 +143,7 @@ const ChatBotWidget: React.FC = () => {
                   <p className="text-[11px] font-semibold text-traditional-500 uppercase tracking-wide px-0.5">
                     Quick questions
                   </p>
-                  <div className="flex flex-wrap gap-1.5 max-h-28 overflow-y-auto">
+                  <div className="flex flex-wrap gap-1.5 max-h-36 overflow-y-auto">
                     {unanswered.map((item) => (
                       <button
                         key={item.id}

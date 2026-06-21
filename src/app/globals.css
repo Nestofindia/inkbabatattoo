@@ -109,6 +109,19 @@
     animation: season-ticker-scroll 32s linear infinite;
   }
 
+  /* Faster scroll on tablet and mobile — same distance, shorter viewport */
+  @media (max-width: 1024px) {
+    .animate-season-ticker {
+      animation-duration: 16s;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .animate-season-ticker {
+      animation-duration: 12s;
+    }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .animate-season-ticker {
       animation: none;
