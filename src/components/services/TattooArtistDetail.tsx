@@ -35,9 +35,9 @@ const TattooArtistDetail: React.FC<TattooArtistDetailProps> = ({ artist }) => {
         </div>
       </section>
 
-      {showBooking && seasonArtist && <ArtistSeasonBooking artist={seasonArtist} />}
-
       <PiercingWorkGallery items={toServiceWorkItems(artist)} />
+
+      {showBooking && seasonArtist && <ArtistSeasonBooking artist={seasonArtist} />}
     </>
   );
 };

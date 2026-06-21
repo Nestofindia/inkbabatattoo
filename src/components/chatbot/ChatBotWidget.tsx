@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Bot, MessageCircle, X } from 'lucide-react';
+import { MessageCircle, Skull, X } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import {
   CHATBOT_FAQ,
@@ -10,6 +10,9 @@ import {
   CHATBOT_WHATSAPP_CTA,
 } from '@/data/chatbot';
 import { WHATSAPP_URL } from '@/config/links';
+
+const CHATBOT_SKULL_LOGO =
+  'https://ik.imagekit.io/wt9brvtz5/logos/Logo%20png%20orange%20white';
 
 interface ChatMessage {
   id: string;
@@ -86,8 +89,15 @@ const ChatBotWidget: React.FC = () => {
             {/* Header */}
             <div className="flex items-center justify-between gap-3 px-4 py-3 bg-gradient-to-r from-traditional-800 to-traditional-900 text-white shrink-0">
               <div className="flex items-center gap-2.5 min-w-0">
-                <div className="p-1.5 rounded-full bg-accent-500 shrink-0">
-                  <Bot className="w-4 h-4" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent-500 shrink-0">
+                  <img
+                    src={CHATBOT_SKULL_LOGO}
+                    alt=""
+                    width={22}
+                    height={22}
+                    className="h-[22px] w-[22px] object-contain"
+                    aria-hidden
+                  />
                 </div>
                 <div className="min-w-0">
                   <p className="font-heading font-bold text-base leading-tight truncate tracking-wide">
@@ -186,7 +196,11 @@ const ChatBotWidget: React.FC = () => {
         aria-label={isOpen ? 'Close Ink Baba assistant' : 'Open Ink Baba assistant'}
         aria-expanded={isOpen}
       >
-        {isOpen ? <X className="w-6 h-6 sm:w-7 sm:h-7" /> : <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7" />}
+        {isOpen ? (
+          <Skull className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.75} />
+        ) : (
+          <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7" />
+        )}
         {!isOpen && (
           <span className="absolute -top-0.5 -right-0.5 w-3 h-3 rounded-full bg-green-400 border-2 border-white" />
         )}
