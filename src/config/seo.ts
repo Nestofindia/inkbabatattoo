@@ -287,6 +287,26 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
     priority: 0.75,
     lastmod: '2026-06-20',
   },
+  '/available-artists': {
+    path: '/available-artists',
+    title: `Available Guest Artists — November to March${suffix}`,
+    description:
+      'Book Mo Naga, Tassos, Giada, Pallada, Chakti, Satish, Manish & Omkar for the November–March guest season at Ink Baba Tattoo House, Arambol, Goa.',
+    keywords: getPageKeywords('tattoo-services', [
+      'guest tattoo artists Goa',
+      'season booking Arambol',
+      'available artists Ink Baba',
+    ]),
+    h1: 'Available Guest Artists',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Available Artists', path: '/available-artists' },
+    ],
+    schemaType: 'CollectionPage',
+    changefreq: 'weekly',
+    priority: 0.9,
+    lastmod: '2026-06-21',
+  },
   '/terms-and-conditions': {
     path: '/terms-and-conditions',
     title: `Terms & Conditions${suffix}`,

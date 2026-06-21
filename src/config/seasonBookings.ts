@@ -128,9 +128,19 @@ export function getSeasonArtistPath(artist: SeasonArtistBooking): string {
   return `/upcoming-season/${artist.id}`;
 }
 
+export const AVAILABLE_ARTISTS_PATH = '/available-artists';
+
+export function getAvailableSeasonArtists(): SeasonArtistBooking[] {
+  return SEASON_ARTISTS.filter((artist) => artist.bookingEnabled);
+}
+
 export const SEASON_TICKER_MESSAGES = [
-  `Upcoming season ${SEASON_LABEL} — book your slot with Mo Naga, Tassos, Giada, Pallada, Chakti, Satish, Manish & Omkar`,
-  'Guest artists returning to Ink Baba Tattoo House, Arambol, Goa',
-  'More artists coming soon — stay tuned for the latest updates on our site',
-  'Choose your artist page and pick a date & time to reserve your session',
+  `Upcoming season ${SEASON_LABEL} at Ink Baba Tattoo House, Arambol, Goa`,
+  'Guest artists returning — book your slot for tattoos and piercing',
+  'More artists coming soon — stay tuned for updates on our site',
 ] as const;
+
+export const SEASON_TICKER_CTA = {
+  label: 'Available Artists — View & Book',
+  href: AVAILABLE_ARTISTS_PATH,
+} as const;
