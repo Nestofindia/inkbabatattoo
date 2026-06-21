@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, Skull, X } from 'lucide-react';
+import { MessageCircle, X } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import {
   CHATBOT_FAQ,
@@ -11,8 +11,7 @@ import {
 } from '@/data/chatbot';
 import { WHATSAPP_URL } from '@/config/links';
 
-const CHATBOT_SKULL_LOGO =
-  'https://ik.imagekit.io/wt9brvtz5/logos/Logo%20png%20orange%20white';
+const CHATBOT_FAVICON = '/favicon-48x48.png';
 
 interface ChatMessage {
   id: string;
@@ -89,13 +88,13 @@ const ChatBotWidget: React.FC = () => {
             {/* Header */}
             <div className="flex items-center justify-between gap-3 px-4 py-3 bg-gradient-to-r from-traditional-800 to-traditional-900 text-white shrink-0">
               <div className="flex items-center gap-2.5 min-w-0">
-                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-accent-500 shrink-0">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-white shrink-0 overflow-hidden">
                   <img
-                    src={CHATBOT_SKULL_LOGO}
+                    src={CHATBOT_FAVICON}
                     alt=""
-                    width={22}
-                    height={22}
-                    className="h-[22px] w-[22px] object-contain"
+                    width={32}
+                    height={32}
+                    className="h-full w-full object-cover"
                     aria-hidden
                   />
                 </div>
@@ -197,7 +196,14 @@ const ChatBotWidget: React.FC = () => {
         aria-expanded={isOpen}
       >
         {isOpen ? (
-          <Skull className="w-6 h-6 sm:w-7 sm:h-7" strokeWidth={1.75} />
+          <img
+            src={CHATBOT_FAVICON}
+            alt=""
+            width={28}
+            height={28}
+            className="h-6 w-6 sm:h-7 sm:w-7 object-contain"
+            aria-hidden
+          />
         ) : (
           <MessageCircle className="w-6 h-6 sm:w-7 sm:h-7" />
         )}
