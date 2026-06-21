@@ -27,18 +27,22 @@ export function buildStudioWhatsAppUrl(data: ArtistBookingRequest, fullPhone: st
 
 export async function sendBookingEmail(
   data: ArtistBookingRequest,
-  fullPhone: string
+  fullPhone: string,
+  options?: { serverSide?: boolean }
 ): Promise<{ ok: true } | { ok: false; error: string }> {
-  return submitWeb3Form({
-    subject: `Season Booking — ${data.artistName} — ${data.date} ${data.timeSlot}`,
-    name: data.name,
-    email: data.email,
-    replyto: data.email,
-    phone: fullPhone,
-    country_code: data.countryCode,
-    service: `Season booking · ${data.artistName}`,
-    message: formatBookingMessage(data, fullPhone),
-  });
+  return submitWeb3Form(
+    {
+      subject: `Season Booking — ${data.artistName} — ${data.date} ${data.timeSlot}`,
+      name: data.name,
+      email: data.email,
+      replyto: data.email,
+      phone: fullPhone,
+      country_code: data.countryCode,
+      service: `Season booking · ${data.artistName}`,
+      message: formatBookingMessage(data, fullPhone),
+    },
+    options
+  );
 }
 
 /** Push booking summary to studio WhatsApp via CallMeBot (optional env key). */
