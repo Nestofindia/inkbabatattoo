@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { SITE_URL } from '@/config/seo';
+import { PRIVATE_STUDIO_TOOLS_PREFIX } from '@/config/privateRoutes';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,6 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
+        disallow: [PRIVATE_STUDIO_TOOLS_PREFIX],
       },
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,

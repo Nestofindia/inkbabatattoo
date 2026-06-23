@@ -10,7 +10,6 @@ import GalleryPreview from '@/components/home/GalleryPreview';
 import ServicesPreview from '@/components/home/ServicesPreview';
 import CarePreview from '@/components/home/CarePreview';
 import TestimonialsPreview from '@/components/home/TestimonialsPreview';
-import TattooDesignStudio from '@/components/home/TattooDesignStudio';
 import { usePreloadVideos } from '@/hooks/usePreloadVideos';
 import { HOME_PRELOAD_VIDEO_URLS } from '@/config/homeVideos';
 // import ContactCTA from '@/components/home/ContactCTA';
@@ -28,7 +27,6 @@ const HomeView: React.FC = () => {
       <CarePreview />
       <TestimonialsPreview />
       <HowItWorksSection />
-      <TattooDesignStudio />
       {/* <ContactCTA /> */}
     </PageTransition>
   );

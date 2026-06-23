@@ -141,6 +141,6 @@ export const SEASON_TICKER_MESSAGES = [
 ] as const;
 
 export const SEASON_TICKER_CTA = {
-  label: 'Available Artists — View & Book',
+  label: 'Available Artists of Season 2026-27',
   href: AVAILABLE_ARTISTS_PATH,
 } as const;

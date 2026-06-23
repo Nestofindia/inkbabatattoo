@@ -87,7 +87,7 @@ const SeasonBookingTicker: React.FC = () => {
       <div className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-gradient-to-l from-traditional-900 to-transparent sm:w-16" />
 
       <div className="sr-only">
-        <Link href={AVAILABLE_ARTISTS_PATH}>View available season artists</Link>
+        <Link href={AVAILABLE_ARTISTS_PATH}>Available Artists of Season 2026-27</Link>
         {getAvailableSeasonArtists().map((artist) => (
           <Link key={artist.id} href={getSeasonArtistPath(artist)}>
             Book {artist.name}
