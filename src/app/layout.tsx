@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import Script from 'next/script';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -58,16 +59,66 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en-IN">
       <head>
-        <link rel="preconnect" href="https://szekpgvomczeswpvthiy.supabase.co" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://szekpgvomczeswpvthiy.supabase.co" />
-        {/* Preload the hero banner video before React hydrates */}
-        <link rel="preload" as="video" href={BANNER_VIDEO} type="video/mp4" fetchPriority="high" />
+        <link
+          rel="preconnect"
+          href="https://szekpgvomczeswpvthiy.supabase.co"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="dns-prefetch"
+          href="https://szekpgvomczeswpvthiy.supabase.co"
+        />
+
+        {/* Preload Hero Video */}
+        <link
+          rel="preload"
+          as="video"
+          href={BANNER_VIDEO}
+          type="video/mp4"
+          fetchPriority="high"
+        />
+
+        {/* Google Tag Manager */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){
+              w[l]=w[l]||[];
+              w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});
+              var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),
+              dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;
+              j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5V5V5QR3');
+          `}
+        </Script>
       </head>
+
       <body className="flex min-h-screen w-full max-w-full flex-col overflow-x-hidden">
+
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-5V5V5QR3"
+            height="0"
+            width="0"
+            style={{
+              display: 'none',
+              visibility: 'hidden',
+            }}
+          />
+        </noscript>
+
         <GlobalStructuredData />
         <Navbar />
         <main className="flex-grow">{children}</main>
