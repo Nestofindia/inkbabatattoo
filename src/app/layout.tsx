@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import WhatsAppButton from '@/components/Whatsapp/WhatsAppButton';
+import InquiryPopup from '@/components/shared/InquiryPopup';
 import { GlobalStructuredData } from '@/components/seo/StructuredData';
 import {
   DEFAULT_OG_IMAGE,
@@ -126,6 +127,7 @@ export default function RootLayout({
         <main className="flex-grow">{children}</main>
         <Footer />
         <WhatsAppButton />
+        <InquiryPopup />
       </body>
     </html>
   );

@@ -21,7 +21,12 @@ const SERVICE_LABELS: Record<string, string> = {
 
 function formatServiceLabel(value: string): string {
   if (!value) return 'Not specified';
-  return SERVICE_LABELS[value] ?? value;
+  if (SERVICE_LABELS[value]) return SERVICE_LABELS[value];
+
+  return value
+    .split('-')
+    .map((segment) => segment.charAt(0).toUpperCase() + segment.slice(1))
+    .join(' ');
 }
 
 /** Sends contact form data to studio inbox via Web3Forms (see .env.example). */

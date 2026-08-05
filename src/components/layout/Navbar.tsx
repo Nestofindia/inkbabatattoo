@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, ChevronDown } from 'lucide-react';
-import { WHATSAPP_URL } from '../../config/links';
+import { Menu, X, ChevronDown, Phone } from 'lucide-react';
+import { SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_URL } from '../../config/links';
 import LazyImage from '../shared/LazyImage';
 
 const LOGO_DARK =
@@ -196,22 +196,32 @@ const Navbar: React.FC = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-book-now ml-1 text-sm xl:text-base py-2 px-5 xl:py-3 xl:px-8 shrink-0"
+            className="btn-book-now text-sm xl:text-base py-2 px-5 xl:py-3 xl:px-8 shrink-0"
           >
             Book Now
           </a>
         </nav>
 
-        <button
-          type="button"
-          className={`lg:hidden p-2 transition-colors ${
-            useDarkNav ? 'text-traditional-700' : 'text-white'
-          }`}
-          onClick={() => setIsOpen((v) => !v)}
-          aria-label={isOpen ? 'Close menu' : 'Open menu'}
-        >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+        <div className="flex items-center gap-2 lg:hidden">
+          <a
+            href={`tel:${SITE_PHONE}`}
+            className="inline-flex items-center gap-1 rounded-full border border-accent-500 bg-white px-3 py-2 text-[13px] font-semibold text-traditional-900 transition hover:bg-accent-50"
+            aria-label={`Inquiry ${SITE_PHONE_DISPLAY}`}
+          >
+            {/* <Phone size={16} /> */}
+            <span className="truncate max-w-[10rem]">Inquiry</span>
+          </a>
+          <button
+            type="button"
+            className={`p-2 transition-colors ${
+              useDarkNav ? 'text-traditional-700' : 'text-white'
+            }`}
+            onClick={() => setIsOpen((v) => !v)}
+            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          >
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile */}

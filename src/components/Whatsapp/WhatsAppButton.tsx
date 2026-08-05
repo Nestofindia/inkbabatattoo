@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
-import { GOOGLE_REVIEWS_URL, WHATSAPP_URL } from '../../config/links';
+import { Phone } from 'lucide-react';
+import { GOOGLE_REVIEWS_URL, SITE_PHONE, SITE_PHONE_DISPLAY, WHATSAPP_URL } from '../../config/links';
 import ChatBotWidget from '../chatbot/ChatBotWidget';
 
 const cardBase =
@@ -100,6 +101,13 @@ const WhatsAppButton = () => {
 
       {/* Chat + WhatsApp — bottom left */}
       <div className="fixed z-50 bottom-4 left-3 sm:bottom-6 sm:left-6 flex flex-col items-start gap-3">
+        <a
+          href={`tel:${SITE_PHONE}`}
+          className="inline-flex items-center justify-center rounded-full bg-white text-traditional-900 border border-accent-200 p-3 sm:p-4 shadow-lg hover:bg-accent-50 transition-all duration-300"
+          aria-label="Call Ink Baba Tattoo House"
+        >
+          <Phone className="w-6 h-6 sm:w-7 sm:h-7" />
+        </a>
         <div className="relative">
           <ChatBotWidget />
         </div>

@@ -12,6 +12,7 @@ import {
   SITE_PHONE,
   SITE_PHONE_DISPLAY,
 } from '@/config/links';
+import { galleryCategories } from '@/config/gallery';
 import {
   submitContactForm,
   type ContactFormData,
@@ -35,6 +36,16 @@ const INITIAL_FORM: ContactFormData = {
   service: '',
   message: '',
 };
+
+const SERVICE_OPTIONS = [
+  { value: 'piercing', label: 'Piercing' },
+  ...galleryCategories
+    .filter((category) => category !== 'All')
+    .map((category) => ({
+      value: category.toLowerCase().replace(/\s+/g, '-'),
+      label: category,
+    })),
+];
 
 const ContactView: React.FC = () => {
   const [formData, setFormData] = useState<ContactFormData>(INITIAL_FORM);
@@ -334,11 +345,11 @@ const ContactView: React.FC = () => {
                       className="input-field w-full"
                     >
                       <option value="">Select a service...</option>
-                      <option value="sacred-symbols">Sacred Symbols</option>
-                      <option value="mandala-art">Mandala Art</option>
-                      <option value="spiritual-portraits">Spiritual Portraits</option>
-                      <option value="ritual-tattoos">Custom Ritual Tattoos</option>
-                      <option value="other">Other</option>
+                      {SERVICE_OPTIONS.map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
+                        </option>
+                      ))}
                     </select>
                   </div>
 
