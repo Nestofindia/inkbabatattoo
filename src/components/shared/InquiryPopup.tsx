@@ -30,9 +30,15 @@ const InquiryPopup: React.FC = () => {
       return;
     }
 
-    setMessage(MESSAGES[Math.floor(Math.random() * MESSAGES.length)]);
-    setVisible(true);
-    window.sessionStorage.setItem(SESSION_KEY, now.toString());
+    const timer = window.setTimeout(() => {
+      setMessage(MESSAGES[Math.floor(Math.random() * MESSAGES.length)]);
+      setVisible(true);
+      window.sessionStorage.setItem(SESSION_KEY, Date.now().toString());
+    }, 5000);
+
+    return () => {
+      window.clearTimeout(timer);
+    };
   }, [pathname]);
 
   if (!visible) {
