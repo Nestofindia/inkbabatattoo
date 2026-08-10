@@ -135,10 +135,10 @@ const HowItWorksSection: React.FC = () => {
             <div className="w-8 sm:w-12 h-px bg-traditional-400 max-[469px]:w-6" />
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl max-[469px]:text-2xl font-special font-bold mb-4 sm:mb-6 max-[469px]:mb-2 text-traditional-900">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl max-[469px]:text-[1.6rem] font-special font-bold mb-3 sm:mb-6 max-[469px]:mb-2 text-traditional-900">
             Simple Steps, <span className="font-logo font-condensed-bold text-accent-600">Great Tattoos</span>
           </h2>
-          <p className="text-base sm:text-xl max-[469px]:text-sm text-traditional-600 max-w-3xl mx-auto leading-relaxed font-body px-2 sm:px-0">
+          <p className="text-sm sm:text-xl max-[469px]:text-xs text-traditional-600 max-w-3xl mx-auto leading-relaxed font-body px-2 sm:px-0">
             From your first idea to the final tattoo.
           </p>
         </motion.div>
@@ -167,11 +167,11 @@ const HowItWorksSection: React.FC = () => {
                 </motion.div>
               </div>
 
-              <h3 className="text-lg sm:text-xl md:text-[1.35rem] font-heading font-bold text-traditional-900 mb-3 leading-snug group-hover:text-accent-800 transition-colors duration-300">
+              <h3 className="text-base sm:text-xl md:text-[1.35rem] max-[469px]:text-sm font-heading font-bold text-traditional-900 mb-2 sm:mb-3 leading-snug group-hover:text-accent-800 transition-colors duration-300">
                 {step.title}
               </h3>
 
-              <p className="text-traditional-700 text-sm sm:text-base leading-relaxed font-body flex-grow">
+              <p className="text-traditional-700 text-xs sm:text-base leading-relaxed font-body flex-grow max-[469px]:text-[0.8rem]">
                 <StepDescription
                   description={step.description}
                   linkWhatsApp={step.linkWhatsApp}

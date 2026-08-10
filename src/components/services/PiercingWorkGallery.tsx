@@ -24,7 +24,7 @@ const DEFAULT_ITEM_CLASS =
   'group relative w-full min-w-0 overflow-hidden rounded-xl border border-traditional-200 bg-traditional-50 text-left shadow-sm transition-all duration-300 hover:border-accent-300 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-400';
 
 const DEFAULT_IMAGE_CLASS =
-  'aspect-[3/4] w-full object-cover transition-transform duration-500 group-hover:scale-105';
+  'aspect-[3/4] w-full object-cover object-center grayscale contrast-[0.92] saturate-0 brightness-[1.03] transition-transform duration-500 group-hover:scale-105';
 
 const SWIPE_THRESHOLD_PX = 48;
 
