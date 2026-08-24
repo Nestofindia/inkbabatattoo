@@ -3,7 +3,7 @@ export const HERO_VIDEO_URL =
   'https://ik.imagekit.io/kqgs8jfw2/videos/INKBABA.mp4';
 
 export const ABOUT_VIDEO_URL =
-  'https://ik.imagekit.io/kqgs8jfw2/videos/Inkbaba%20family.mov/ik-video.mp4?updatedAt=1786386997939';
+  'https://ik.imagekit.io/kqgs8jfw2/videos/INKBABA.mp4';
 
 export const FEATURED_PREVIEW_VIDEOS = [
   'https://ik.imagekit.io/kqgs8jfw2/videos/chakti%2002.mp4',
