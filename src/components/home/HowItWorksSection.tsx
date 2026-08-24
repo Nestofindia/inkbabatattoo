@@ -167,11 +167,11 @@ const HowItWorksSection: React.FC = () => {
                 </motion.div>
               </div>
 
-              <h3 className="text-lg sm:text-xl md:text-[1.35rem] font-heading font-bold text-traditional-900 mb-3 leading-snug group-hover:text-accent-800 transition-colors duration-300">
+              <h3 className="text-base sm:text-xl md:text-[1.35rem] max-[469px]:text-sm font-heading font-bold text-traditional-900 mb-2 sm:mb-3 leading-snug group-hover:text-accent-800 transition-colors duration-300">
                 {step.title}
               </h3>
 
-              <p className="text-traditional-700 text-sm sm:text-base leading-relaxed font-body flex-grow">
+              <p className="text-traditional-700 text-xs sm:text-base leading-relaxed font-body flex-grow max-[469px]:text-[0.8rem]">
                 <StepDescription
                   description={step.description}
                   linkWhatsApp={step.linkWhatsApp}

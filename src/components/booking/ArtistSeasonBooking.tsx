@@ -74,7 +74,7 @@ const ArtistSeasonBooking: React.FC<ArtistSeasonBookingProps> = ({ artist, ancho
   return (
     <section
       id={anchorId}
-      className="py-20 bg-gradient-to-br from-accent-50 via-warm-50 to-pastel-100 border-t border-traditional-200"
+      className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-accent-50 via-warm-50 to-pastel-100 border-t border-traditional-200"
     >
       <div className="container mx-auto px-4 md:px-8">
         <motion.div
@@ -84,15 +84,15 @@ const ArtistSeasonBooking: React.FC<ArtistSeasonBookingProps> = ({ artist, ancho
           transition={{ duration: 0.5 }}
           className="max-w-3xl mx-auto"
         >
-          <div className="text-center mb-10">
+          <div className="text-center mb-6 sm:mb-10">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent-100 text-accent-700 text-sm font-semibold mb-4">
               <CalendarDays className="w-4 h-4" />
               Upcoming Season · {SEASON_LABEL}
             </div>
-            <h2 className="text-3xl md:text-4xl font-special font-bold text-traditional-900 mb-3">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-special font-bold text-traditional-900 mb-3">
               Book a Slot with {artist.displayName}
             </h2>
-            <p className="text-traditional-600 font-body leading-relaxed">
+            <p className="text-sm sm:text-base text-traditional-600 font-body leading-relaxed">
               {artist.name} is joining Ink Baba for the {SEASON_LABEL} season in Arambol, Goa. Pick any
               available day and time — we will confirm by email and WhatsApp.
             </p>
@@ -124,7 +124,7 @@ const ArtistSeasonBooking: React.FC<ArtistSeasonBookingProps> = ({ artist, ancho
           ) : (
             <form
               onSubmit={handleSubmit}
-              className="card-traditional p-6 md:p-8 bg-white space-y-5"
+              className="card-traditional p-4 sm:p-6 md:p-8 bg-white space-y-4 sm:space-y-5"
             >
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>

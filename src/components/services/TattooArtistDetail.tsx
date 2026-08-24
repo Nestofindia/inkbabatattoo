@@ -37,6 +37,20 @@ const TattooArtistDetail: React.FC<TattooArtistDetailProps> = ({ artist }) => {
 
       <PiercingWorkGallery items={toServiceWorkItems(artist)} />
 
+      <section className="bg-[#f8f2eb] px-4 py-8 sm:py-10 lg:py-12">
+        <div className="container mx-auto max-w-3xl rounded-[1.5rem] border border-traditional-200 bg-white/90 p-5 shadow-sm sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-600">
+            Booking inquiry
+          </p>
+          <h2 className="mt-2 text-2xl font-heading font-bold text-traditional-900 sm:text-3xl">
+            Ready to plan your visit?
+          </h2>
+          <p className="mt-3 text-sm leading-6 text-traditional-600 sm:text-base">
+            Share your preferred date, style, and idea and we’ll help you lock in a smooth consultation.
+          </p>
+        </div>
+      </section>
+
       {showBooking && seasonArtist && <ArtistSeasonBooking artist={seasonArtist} />}
     </>
   );

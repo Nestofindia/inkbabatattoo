@@ -30,6 +30,28 @@
     -ms-overflow-style: none;
   }
 
+  @media (max-width: 469px) {
+    body {
+      @apply text-[0.95rem] leading-6;
+    }
+
+    h1 {
+      @apply text-3xl;
+    }
+
+    h2 {
+      @apply text-2xl;
+    }
+
+    h3 {
+      @apply text-xl;
+    }
+
+    p {
+      @apply text-sm leading-6;
+    }
+  }
+
   body::-webkit-scrollbar {
     display: none;
     width: 0;
@@ -299,6 +321,42 @@
   
   .section-title {
     @apply text-3xl md:text-4xl lg:text-5xl mb-6 text-center relative text-traditional-900 font-heading font-bold;
+  }
+
+  @media (max-width: 469px) {
+    .section-title {
+      @apply text-2xl mb-4;
+    }
+
+    .section-title:after {
+      @apply mt-3 w-16;
+    }
+
+    .btn-primary,
+    .btn-outline,
+    .btn-secondary {
+      @apply py-2.5 px-5 text-sm;
+    }
+
+    .input-field {
+      @apply py-2.5 px-3 text-sm;
+    }
+
+    .card-text {
+      @apply p-4;
+    }
+
+    .how-it-works-card {
+      @apply p-4;
+    }
+
+    .how-it-works-illustration {
+      @apply p-3 mb-4;
+    }
+
+    .how-it-works-step-num {
+      @apply text-4xl mb-3;
+    }
   }
   
   .section-title:after {

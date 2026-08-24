@@ -74,11 +74,11 @@ const Navbar: React.FC = () => {
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 backdrop-blur-md shadow-traditional py-3 max-[469px]:py-2 border-b border-warm-200'
-          : 'bg-transparent py-5 max-[469px]:py-2.5'
+          ? 'bg-white/95 backdrop-blur-md shadow-traditional py-3 max-[469px]:py-2.5 border-b border-warm-200'
+          : 'bg-transparent py-4 max-[469px]:py-2'
       }`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
+      <div className="container mx-auto px-3 sm:px-4 flex justify-between items-center">
         <Link
           href="/"
           className="hover:opacity-90 transition-opacity shrink-0"
@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
             eager
             src={useDarkNav ? LOGO_DARK : LOGO_LIGHT}
             alt="Ink Baba Tattoo House Logo"
-            className="h-12 max-[469px]:h-10 lg:h-14 xl:h-16 w-auto object-contain -ml-2"
+            className="h-12 max-[469px]:h-9 lg:h-14 xl:h-16 w-auto object-contain -ml-2"
           />
         </Link>
 
@@ -205,7 +205,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center gap-2 lg:hidden">
           <a
             href={`tel:${SITE_PHONE}`}
-            className="inline-flex items-center gap-1 rounded-full border border-accent-500 bg-white px-3 py-2 text-[13px] font-semibold text-traditional-900 transition hover:bg-accent-50"
+            className="inline-flex items-center gap-1 rounded-full border border-accent-500 bg-white px-2.5 py-1.5 text-[12px] font-semibold text-traditional-900 transition hover:bg-accent-50 max-[359px]:px-2 max-[359px]:text-[11px]"
             aria-label={`Inquiry ${SITE_PHONE_DISPLAY}`}
           >
             {/* <Phone size={16} /> */}
@@ -213,7 +213,7 @@ const Navbar: React.FC = () => {
           </a>
           <button
             type="button"
-            className={`p-2 transition-colors ${
+            className={`p-1.5 transition-colors ${
               useDarkNav ? 'text-traditional-700' : 'text-white'
             }`}
             onClick={() => setIsOpen((v) => !v)}
