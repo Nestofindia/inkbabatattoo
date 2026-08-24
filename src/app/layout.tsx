@@ -12,13 +12,11 @@ import {
   SITE_TAGLINE,
   SITE_URL,
 } from '@/config/seo';
-import { HERO_VIDEO_URL } from '@/config/homeVideos';
+import { HOME_PRELOAD_VIDEO_URLS } from '@/config/homeVideos';
 
 const HOME_TITLE = `${SITE_NAME} — Spiritual Tattoo Art in Arambol, Goa`;
 const HOME_DESCRIPTION =
   'Ink Baba Tattoo House in Arambol, Goa — custom spiritual tattoos, mandala art, sacred symbols, and professional piercing. Walk-ins welcome. Book: +91 77190 99888.';
-
-const BANNER_VIDEO = HERO_VIDEO_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -68,6 +66,20 @@ export default function RootLayout({
   return (
     <html lang="en-IN">
       <head>
+        <meta
+          name="google-site-verification"
+          content="WtiXqIbKpGMRBYaJS5E8ljfNC_9eLansOdtw5i3-fmo"
+        />
+
+        <link
+          rel="preconnect"
+          href="https://ik.imagekit.io"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="dns-prefetch"
+          href="https://ik.imagekit.io"
+        />
         <link
           rel="preconnect"
           href="https://szekpgvomczeswpvthiy.supabase.co"
@@ -78,14 +90,29 @@ export default function RootLayout({
           href="https://szekpgvomczeswpvthiy.supabase.co"
         />
 
-        {/* Preload Hero Video */}
-        <link
-          rel="preload"
-          as="video"
-          href={BANNER_VIDEO}
-          type="video/mp4"
-          fetchPriority="high"
+        {HOME_PRELOAD_VIDEO_URLS.map((videoUrl) => (
+          <link
+            key={videoUrl}
+            rel="preload"
+            as="video"
+            href={videoUrl}
+            type="video/mp4"
+            fetchPriority="high"
+          />
+        ))}
+
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-3G8HXZE6Y7"
         />
+        <Script id="google-analytics-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-3G8HXZE6Y7');
+          `}
+        </Script>
 
         {/* Google Tag Manager */}
         <script

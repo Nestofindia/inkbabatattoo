@@ -61,11 +61,10 @@ const InquiryPopup: React.FC = () => {
               Inquiry
             </span>
             <h2 className="mt-4 text-xl font-heading font-bold text-traditional-900 sm:text-2xl">
-              Book a free tattoo enquiry
+              Book a free consultation
             </h2>
             <p className="mt-3 text-sm leading-6 text-traditional-600 sm:text-base">
-              Call or WhatsApp us now and our studio team will help you explore your design, placement,
-              and booking details.
+              Every tattoo starts with an idea or a story. Share yours with us, and we’ll help you encWhatsApp turn it into something meaningful.
             </p>
           </div>
           <button
