@@ -16,26 +16,26 @@ const steps: Array<{
 }> = [
   {
     number: '01',
-    title: 'Book Your Free Consultation',
+    title: 'Start With Your Story',
     description:
-      "Connect with our team on WhatsApp for a relaxed and friendly consultation. We'll discuss your ideas, tattoo style, and everything you need to know.",
+      "Tell us what brings you here. It could be a memory, a person, a belief, a new beginning—or simply something you’ve always wanted to carry with you. Start with a conversation, and we’ll take it from there.",
     Illustration: ConsultationIllustration,
     icon: <MessageCircle className="w-4 h-4" />,
     linkWhatsApp: true,
   },
   {
     number: '02',
-    title: 'Custom-designed',
+    title: 'Create With Intention',
     description:
-      'Your artist creates a custom design from scratch. Work together until every detail feels perfect, meaningful, unique, and completely true to your vision.',
+      'Your idea becomes your tattoo. Your artist listens, understands and works with you to shape the design, style and placement. Nothing is rushed. We refine the details until it feels truly yours.',
     Illustration: DesignIllustration,
     icon: <PenLine className="w-4 h-4" />,
   },
   {
     number: '03',
-    title: 'Get inked. Wear it proudly.',
+    title: 'Make It A Part Of You',
     description:
-      "Relax in our calm Arambol studio while your artist brings your tattoo to life. Your design and pricing are already confirmed — now it's all about the art.",
+      "When it feels right, we make it real. Settle into our space, take a breath, and let your artist bring your story to life—with care, precision and respect for the meaning behind it.",
     Illustration: TattooIllustration,
     icon: <Sparkles className="w-4 h-4" />,
   },
@@ -136,10 +136,10 @@ const HowItWorksSection: React.FC = () => {
           </div>
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl max-[469px]:text-2xl font-special font-bold mb-4 sm:mb-6 max-[469px]:mb-2 text-traditional-900">
-            Simple Steps, <span className="font-logo font-condensed-bold text-accent-600">Great Tattoos</span>
+            A Tattoo Journey, <span className="font-logo font-condensed-bold text-accent-600">Not Just A Tattoo</span>
           </h2>
           <p className="text-base sm:text-xl max-[469px]:text-sm text-traditional-600 max-w-3xl mx-auto leading-relaxed font-body px-2 sm:px-0">
-            From your first idea to the final tattoo.
+            Because something permanent deserves a little time, thought and meaning.
           </p>
         </motion.div>
 
@@ -152,8 +152,8 @@ const HowItWorksSection: React.FC = () => {
             >
               <div className="flex items-start justify-between gap-3 mb-1">
                 <span className="how-it-works-step-num">{step.number}</span>
-                <span className="mt-2 flex items-center justify-center w-8 h-8 rounded-full bg-accent-100 text-accent-700 opacity-80 group-hover:opacity-100 group-hover:bg-accent-200 transition-all duration-300">
-                  {step.icon}
+                <span className="mt-2 flex items-center justify-center w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-accent-100 text-accent-700 opacity-80 group-hover:opacity-100 group-hover:bg-accent-200 transition-all duration-300">
+                  <span className="scale-[0.8] sm:scale-100">{step.icon}</span>
                 </span>
               </div>
 

@@ -31,7 +31,8 @@ const TattooArtistGridCard: React.FC<TattooArtistGridCardProps> = ({ artist, ind
           <LazyImage
             src={artist.profileImage}
             alt={`${artist.name} profile`}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="h-full w-full object-cover object-center grayscale transition-transform duration-500 group-hover:scale-105"
+            style={{ objectPosition: 'center 18%' }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-traditional-900/50 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         </div>

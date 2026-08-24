@@ -46,11 +46,11 @@ const ContactCTA: React.FC = () => {
             <Star className="w-6 h-6 text-accent-400" fill="currentColor" />
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-special font-bold mb-8 text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl max-[469px]:text-2xl font-special font-bold mb-4 sm:mb-6 max-[469px]:mb-2 text-traditional-900">
             Ready to Ink Your <span className="font-logo font-condensed-bold text-accent-400">Sacred Spirit</span>?
           </h2>
           
-          <p className="text-xl md:text-2xl text-warm-200 mb-12 leading-relaxed max-w-3xl mx-auto font-body">
+          <p className="text-base sm:text-xl max-[469px]:text-sm text-traditional-600 max-w-3xl mx-auto leading-relaxed font-body px-2 sm:px-0">
             Every spiritual journey deserves to be honored with sacred art. 
             Let's create something meaningful together that connects with your soul and celebrates your unique path.
           </p>

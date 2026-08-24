@@ -188,10 +188,10 @@ const ServicesPreview: React.FC = () => {
             <div className="w-12 h-px bg-traditional-400"></div>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-special font-bold mb-6 text-traditional-900">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl max-[469px]:text-2xl font-special font-bold mb-4 sm:mb-6 max-[469px]:mb-2 text-traditional-900">
             Our <span className="font-logo font-condensed-bold text-accent-600">Services</span>
           </h2>
-          <p className="text-xl text-traditional-600 max-w-3xl mx-auto leading-relaxed font-body">
+          <p className="text-base sm:text-xl max-[469px]:text-sm text-traditional-600 max-w-3xl mx-auto leading-relaxed font-body px-2 sm:px-0">
            Whether it’s art, healing, or unique experiences, everything we do is designed to connect and leave an impression.
           </p>
         </motion.div>

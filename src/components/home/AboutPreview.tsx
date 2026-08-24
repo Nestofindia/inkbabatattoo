@@ -27,11 +27,11 @@ const AboutPreview: React.FC = () => {
               <span className="text-traditional-600 font-medium text-lg font-logo font-condensed-bold">Our Story</span>
             </div> */}
             
-            <h2 className="text-4xl md:text-5xl font-special font-bold mb-8 text-traditional-900">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl max-[469px]:text-2xl font-special font-bold mb-4 sm:mb-6 max-[469px]:mb-2 text-traditional-900">
               Our <span className="font-logo font-condensed-bold text-accent-600">Story</span>
             </h2>
             
-            <div className="space-y-6 text-lg text-traditional-700 leading-relaxed font-body">
+            <div className="text-base sm:text-xl max-[469px]:text-sm text-traditional-600 max-w-3xl mx-auto leading-relaxed font-body px-2 sm:px-0">
               <p>
                 InkBaba Tattoo House — a team of artists who believe tattoos should feel real, personal, and true to you. Every piece is shaped around your story and style, whether it’s something small or something bold.
               </p>

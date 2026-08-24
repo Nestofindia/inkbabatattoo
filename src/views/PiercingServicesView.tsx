@@ -75,11 +75,11 @@ const PiercingServicesView: React.FC = () => {
         </div>
       </section>
 
-      {CHAKTI_SEASON?.bookingEnabled && (
+      <PiercingWorkGallery items={PIERCING_WORK_ITEMS} />
+
+       {CHAKTI_SEASON?.bookingEnabled && (
         <ArtistSeasonBooking artist={CHAKTI_SEASON} anchorId="season-booking-chakti" />
       )}
-
-      <PiercingWorkGallery items={PIERCING_WORK_ITEMS} />
     </PageTransition>
   );
 };

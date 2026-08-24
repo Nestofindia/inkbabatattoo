@@ -27,5 +27,5 @@ export const INKBABA_FAMILY_PHOTOS: InkbabaFamilyPhoto[] = [
   { id: 19, src: 'https://ik.imagekit.io/wt9brvtz5/INK%20BABA%20FAMILY/0I5A0034.JPG?updatedAt=1779546175119', alt: 'Ink Baba family at the studio' },
   { id: 20, src: 'https://ik.imagekit.io/wt9brvtz5/INK%20BABA%20FAMILY/IMGL1744.JPG?updatedAt=1779546010109', alt: 'Ink Baba family at the studio' },
   { id: 21, src: 'https://ik.imagekit.io/wt9brvtz5/INK%20BABA%20FAMILY/FLSH6359.JPG?updatedAt=1779545689972', alt: 'Ink Baba family at the studio' },
-  { id: 22, src: 'https://ik.imagekit.io/wt9brvtz5/INK%20BABA%20FAMILY/FLSH0386.JPG?updatedAt=1779545596504', alt: 'Ink Baba family at the studio' },
+  // { id: 22, src: 'https://ik.imagekit.io/wt9brvtz5/INK%20BABA%20FAMILY/FLSH0386.JPG?updatedAt=1779545596504', alt: 'Ink Baba family at the studio' },
 ];

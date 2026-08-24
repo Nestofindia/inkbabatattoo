@@ -728,10 +728,10 @@ const GalleryPreview: React.FC = () => {
             <div className="w-8 sm:w-12 h-px bg-traditional-400"></div>
           </div>
           
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl max-[469px]:text-xl font-special font-bold mb-3 sm:mb-4 md:mb-6 max-[469px]:mb-2 text-traditional-900">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl max-[469px]:text-2xl font-special font-bold mb-4 sm:mb-6 max-[469px]:mb-2 text-traditional-900">
             Featured <span className="font-logo font-condensed-bold text-accent-600">Works</span>
           </h2>
-          <p className="text-sm sm:text-lg md:text-xl max-[469px]:text-xs text-traditional-600 max-w-3xl mx-auto leading-relaxed font-body px-2 sm:px-4">
+          <p className="">
             These are the stories our clients have trusted us with, each tattoo carrying their memories, milestones, and personal journeys.
           </p>
         </motion.div>
