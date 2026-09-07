@@ -164,6 +164,8 @@ export type SeoKeywordPage =
   | 'piercing-services'
   | 'healing-rituals'
   | 'tattoo-retreat'
+  | 'yoga-retreat'
+  | 'blog'
   | 'contact'
   | 'testimonials'
   | 'faq'
@@ -213,6 +215,13 @@ const PAGE_KEYWORD_EXTRAS: Record<SeoKeywordPage, readonly string[]> = {
     'artist residency Goa',
     'creative tattoo vacation',
   ],
+  'yoga-retreat': [
+    'sacred tattooing retreat Goa',
+    'holistic yoga retreat India',
+    'tattoo and yoga experience',
+    'meaningful tattoo retreat Goa',
+  ],
+  blog: ['tattoo journal Goa', 'studio blog India', 'holistic tattoo insights'],
   contact: [
     'tattoo studio address Arambol',
     'directions Ink Baba',

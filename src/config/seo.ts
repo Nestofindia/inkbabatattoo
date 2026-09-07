@@ -207,6 +207,39 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
     priority: 0.75,
     lastmod: '2026-05-25',
   },
+  '/yoga-retreat': {
+    path: '/yoga-retreat',
+    title: `Sacred Tattooing & Holistic Yoga Retreat${suffix}`,
+    description:
+      'Sacred Tattooing & Holistic Yoga Retreat in Goa with Ink Baba and Yog Temple — combine meaningful tattooing, Yoga, Ayurveda, meditation, and creative reflection.',
+    keywords: getPageKeywords('yoga-retreat'),
+    h1: 'Sacred Tattooing & Holistic Yoga Retreat',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Yoga Retreat', path: '/yoga-retreat' },
+    ],
+    schemaType: 'WebPage',
+    changefreq: 'monthly',
+    priority: 0.8,
+    lastmod: '2026-09-07',
+  },
+  '/blog': {
+    path: '/blog',
+    title: `Studio Journal & Insights${suffix}`,
+    description:
+      'Read a featured journal post from Ink Baba Tattoo House in Goa — reflections on mindful tattooing, artistic rituals, and creative wellbeing.',
+    keywords: getPageKeywords('blog'),
+    h1: 'Studio Journal',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Journal', path: '/blog' },
+    ],
+    schemaType: 'WebPage',
+    ogType: 'article',
+    changefreq: 'monthly',
+    priority: 0.6,
+    lastmod: '2026-09-07',
+  },
   '/contact': {
     path: '/contact',
     title: `Book Tattoo or Piercing — Contact${suffix}`,
