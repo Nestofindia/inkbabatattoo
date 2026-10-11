@@ -70,7 +70,7 @@ const WhatsAppButton = () => {
   return (
     <>
       {/* Rating cards — bottom right */}
-      <div
+      {/* <div
         className="fixed z-50 flex flex-col items-end gap-1.5 sm:gap-2 bottom-4 right-3 sm:bottom-6 sm:right-6"
         aria-label="Ratings"
       >
@@ -97,7 +97,7 @@ const WhatsAppButton = () => {
             icon={<HygieneIcon />}
           />
         </div>
-      </div>
+      </div> */}
 
       {/* Chat + WhatsApp — bottom left */}
       <div className="fixed z-50 bottom-4 left-3 sm:bottom-6 sm:left-6 flex flex-col items-start gap-3">

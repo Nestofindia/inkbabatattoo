@@ -220,8 +220,76 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
     ],
     schemaType: 'WebPage',
     changefreq: 'monthly',
-    priority: 0.8,
-    lastmod: '2026-09-07',
+    priority: 0.75,
+    lastmod: '2026-05-25',
+  },
+  '/tattoo-studio-in-goa': {
+    path: '/tattoo-studio-in-goa',
+    title: 'Best Tattoo Studio in Goa | Inkbaba | Custom Tattoos',
+    description:
+      'Inkbaba tattoo studio in Goa offers custom tattoos, cover-ups, and touch-ups with permanent artists and fair pricing. Free consultation. Walk-ins welcome.',
+    keywords:
+      'tattoo studio Goa, best tattoo studio Goa, custom tattoo Arambol, cover up tattoo Goa, touch up tattoo studio Goa, free consultation tattoo Arambol, hygienic tattoo studio Goa',
+    h1: 'Tattoo Studio in Goa | Inkbaba Tattoo House',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Tattoo Studio in Goa', path: '/tattoo-studio-in-goa' },
+    ],
+    schemaType: 'WebPage',
+    changefreq: 'monthly',
+    priority: 0.9,
+    lastmod: '2026-10-11',
+  },
+  '/tattoo-cover-up-in-goa': {
+    path: '/tattoo-cover-up-in-goa',
+    title: 'Tattoo Cover-Up in Goa | Inkbaba | Expert Redesign',
+    description:
+      'Professional tattoo cover-ups in Goa. We assess your existing tattoo, plan the right design and handle technical challenges. Free consultation.',
+    keywords:
+      'tattoo cover up Goa, cover up tattoo Arambol, redesign tattoo Goa, old tattoo cover up Goa, laser fading tattoo Goa, custom tattoo cover-up Goa',
+    h1: 'Cover-Up Tattoo in Goa | Inkbaba Tattoo House',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Tattoo Cover-Up in Goa', path: '/tattoo-cover-up-in-goa' },
+    ],
+    schemaType: 'WebPage',
+    changefreq: 'monthly',
+    priority: 0.88,
+    lastmod: '2026-10-11',
+  },
+  '/body-piercing-in-goa': {
+    path: '/body-piercing-in-goa',
+    title: 'Professional Body Piercing in Goa | Inkbaba | Expert Piercers',
+    description:
+      'Body piercing in Goa by experienced piercers. Single-use needles, sterile technique, proper jewelry, and honest aftercare guidance. Free consultation.',
+    keywords:
+      'body piercing Goa, ear piercing Goa, nose piercing Goa, cartilage piercing Goa, safe piercing Goa, expert piercer Goa, sterile body piercing Goa',
+    h1: 'Body Piercing in Goa | Inkbaba Tattoo House',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Body Piercing in Goa', path: '/body-piercing-in-goa' },
+    ],
+    schemaType: 'WebPage',
+    changefreq: 'monthly',
+    priority: 0.88,
+    lastmod: '2026-10-11',
+  },
+  '/best-tattoo-artist-in-goa': {
+    path: '/best-tattoo-artist-in-goa',
+    title: 'Best Tattoo Artist in Goa | Award-Winning | Custom Designs | Inkbaba',
+    description:
+      'Internationally award-winning tattoo artist in Goa. Custom designs in realism, fine line work, and detailed styles. Professional consultation. Free touch-ups during healing.',
+    keywords:
+      'best tattoo artist Goa, award winning tattoo artist Goa, custom tattoo artist Arambol, realism tattoo artist Goa, fine line tattoo artist Goa, professional tattoo consultation Goa',
+    h1: 'Finding the Right Tattoo Artist - It Matters',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Best Tattoo Artist in Goa', path: '/best-tattoo-artist-in-goa' },
+    ],
+    schemaType: 'WebPage',
+    changefreq: 'monthly',
+    priority: 0.9,
+    lastmod: '2026-10-11',
   },
   '/blog': {
     path: '/blog',

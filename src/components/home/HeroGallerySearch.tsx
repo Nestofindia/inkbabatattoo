@@ -3,7 +3,6 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Search } from 'lucide-react';
 import { tattooArtistPath } from '../../config/tattooArtists.paths';
 import type { TattooArtistProfile } from '../../config/tattooArtists.types';
 
@@ -104,11 +103,6 @@ const HeroGallerySearch: React.FC = () => {
               : 'border-white/30 bg-white/20 px-3 backdrop-blur-md hover:bg-white/30'
           }`}
         >
-          <Search
-            className={`h-5 w-5 shrink-0 sm:h-6 sm:w-6 ${expanded ? 'text-traditional-700' : 'text-white'}`}
-            aria-hidden
-          />
-
           <input
             ref={inputRef}
             type="search"
@@ -124,7 +118,7 @@ const HeroGallerySearch: React.FC = () => {
             autoComplete="off"
             tabIndex={expanded ? 0 : -1}
             className={`min-w-0 flex-1 bg-transparent font-body text-base text-traditional-900 outline-none placeholder:text-traditional-500 sm:text-lg transition-all duration-300 ${
-              expanded ? 'ml-3 w-full opacity-100' : 'ml-0 w-0 opacity-0 pointer-events-none'
+              expanded ? 'w-full opacity-100' : 'w-0 opacity-0 pointer-events-none'
             }`}
           />
         </div>

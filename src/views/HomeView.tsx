@@ -3,10 +3,12 @@
 import React from 'react';
 import PageTransition from '@/components/utils/PageTransition';
 import HeroSection from '@/components/home/HeroSection';
+import CredibilitySection from '@/components/home/CredibilitySection';
 import SeasonBookingTicker from '@/components/home/SeasonBookingTicker';
 import AboutPreview from '@/components/home/AboutPreview';
 import HowItWorksSection from '@/components/home/HowItWorksSection';
 import GalleryPreview from '@/components/home/GalleryPreview';
+import ArtistShowcaseSection from '@/components/home/ArtistShowcaseSection';
 import ServicesPreview from '@/components/home/ServicesPreview';
 import CarePreview from '@/components/home/CarePreview';
 import TestimonialsPreview from '@/components/home/TestimonialsPreview';
@@ -21,12 +23,14 @@ const HomeView: React.FC = () => {
     <PageTransition>
       <HeroSection />
       <SeasonBookingTicker />
+      <CredibilitySection />
       <AboutPreview />
       <GalleryPreview />
+      <ArtistShowcaseSection />
       <ServicesPreview />
-      <CarePreview />
       <TestimonialsPreview />
       <HowItWorksSection />
+      <CarePreview />
       {/* <ContactCTA /> */}
     </PageTransition>
   );

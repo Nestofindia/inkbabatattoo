@@ -95,6 +95,42 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link 
+                  href="/tattoo-studio-in-goa" 
+                  className="text-traditional-600 hover:text-accent-500 transition-colors duration-300 flex items-center gap-3 text-lg group font-body"
+                >
+                  <span className="w-2 h-2 bg-accent-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span> 
+                  Tattoo Studio in Goa
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/tattoo-cover-up-in-goa" 
+                  className="text-traditional-600 hover:text-accent-500 transition-colors duration-300 flex items-center gap-3 text-lg group font-body"
+                >
+                  <span className="w-2 h-2 bg-accent-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span> 
+                  Tattoo Cover-Up in Goa
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/body-piercing-in-goa" 
+                  className="text-traditional-600 hover:text-accent-500 transition-colors duration-300 flex items-center gap-3 text-lg group font-body"
+                >
+                  <span className="w-2 h-2 bg-accent-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span> 
+                  Body Piercing in Goa
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="/best-tattoo-artist-in-goa" 
+                  className="text-traditional-600 hover:text-accent-500 transition-colors duration-300 flex items-center gap-3 text-lg group font-body"
+                >
+                  <span className="w-2 h-2 bg-accent-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span> 
+                  Best Tattoo Artist in Goa
+                </Link>
+              </li>
+              <li>
+                <Link 
                   href="/gallery" 
                   className="text-traditional-600 hover:text-accent-500 transition-colors duration-300 flex items-center gap-3 text-lg group font-body"
                 >

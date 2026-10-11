@@ -47,7 +47,7 @@ const CarePreview: React.FC = () => {
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl max-[469px]:text-2xl font-special font-bold mb-4 sm:mb-6 max-[469px]:mb-2 text-traditional-900">
             Before &amp; After{' '}
-            <span className="font-logo font-condensed-bold text-accent-600">Care Guides</span>
+            <span className="font-logo font-condensed-bold text-accent-600">Care</span>
           </h2>
           <p className="text-base sm:text-xl max-[469px]:text-sm text-traditional-600 max-w-3xl mx-auto leading-relaxed font-body px-2 sm:px-0">
             Good healing starts before you sit in the chair. Read our tattoo and piercing care guides

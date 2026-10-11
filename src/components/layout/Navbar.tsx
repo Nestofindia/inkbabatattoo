@@ -206,10 +206,10 @@ const Navbar: React.FC = () => {
           <a
             href={`tel:${SITE_PHONE}`}
             className="inline-flex items-center gap-1 rounded-full border border-accent-500 bg-white px-2.5 py-1.5 text-[12px] font-semibold text-traditional-900 transition hover:bg-accent-50 max-[359px]:px-2 max-[359px]:text-[11px]"
-            aria-label={`Inquiry ${SITE_PHONE_DISPLAY}`}
+            aria-label={`Enquiry ${SITE_PHONE_DISPLAY}`}
           >
             {/* <Phone size={16} /> */}
-            <span className="truncate max-w-[10rem]">Inquiry</span>
+            <span className="truncate max-w-[10rem]">Enquiry</span>
           </a>
           <button
             type="button"
@@ -227,10 +227,10 @@ const Navbar: React.FC = () => {
       {/* Mobile */}
       <div
         className={`lg:hidden absolute top-full left-0 w-full bg-white border-b border-warm-200 shadow-md transition-all duration-300 overflow-hidden ${
-          isOpen ? 'max-h-[80vh] opacity-100' : 'max-h-0 opacity-0'
+          isOpen ? 'max-h-[100vh] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <nav className="container mx-auto px-4 py-5 flex flex-col gap-4" aria-label="Mobile">
+        <nav className="container mx-auto px-4 py-5 flex flex-col gap-4 h-[100vh]" aria-label="Mobile">
           <Link href="/" className={navLinkClassesMobile(pathname === '/')} onClick={closeMenu}>
             Home
           </Link>

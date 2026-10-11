@@ -30,7 +30,7 @@ const GalleryView: React.FC = () => {
 
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <SectionHeader 
-            title="Artist's Collection" 
+            title="Artist's Collective" 
             subtitle="A gallery featuring the orignal work of our Inkbaba family"
             accent="gallery"
           />

@@ -128,7 +128,7 @@ export const KALI: TattooArtistProfile = {
   id: "kali",
   name: "Kali",
   subtitle: "Master of Biomech & Bio-Organic Tattooing (London, UK)",
-  countryFlag: "🇬🇧",
+  countryFlag: "",
   category: "Bioorganic",
   categorySlug: "bioorganic",
   profileImage:

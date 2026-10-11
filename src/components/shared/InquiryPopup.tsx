@@ -58,19 +58,19 @@ const InquiryPopup: React.FC = () => {
         <div className="flex items-start justify-between gap-4 relative">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-accent-500/10 px-3 py-1 text-sm font-semibold uppercase tracking-[0.24em] text-accent-600">
-              Inquiry
+              Enquiry
             </span>
             <h2 className="mt-4 text-xl font-heading font-bold text-traditional-900 sm:text-2xl">
               Book a free consultation
             </h2>
             <p className="mt-3 text-sm leading-6 text-traditional-600 sm:text-base">
-              Every tattoo starts with an idea or a story. Share yours with us, and we’ll help you encWhatsApp turn it into something meaningful.
+              Share your idea with us, and let’s create a tattoo that tells your story.
             </p>
           </div>
           <button
             type="button"
             onClick={() => setVisible(false)}
-            className="relative z-10 rounded-full bg-traditional-100 p-2 text-traditional-600 transition hover:bg-traditional-200"
+            className="relative z-10 flex h-7 w-7 items-center justify-center rounded-md border border-traditional-200 bg-white text-sm font-semibold leading-none text-traditional-600 shadow-sm transition hover:bg-accent-50 hover:text-accent-600 max-[469px]:h-6 max-[469px]:w-6 max-[469px]:text-xs"
             aria-label="Close enquiry notification"
           >
             ✕
@@ -80,18 +80,18 @@ const InquiryPopup: React.FC = () => {
         <div className="mt-5 grid grid-cols-1 gap-2.5 sm:grid-cols-2 sm:gap-3">
           <a
             href={`tel:${SITE_PHONE}`}
-            className="inline-flex items-center justify-center gap-2 rounded-full border border-accent-500 bg-white px-4 py-2.5 text-sm font-semibold text-traditional-900 transition hover:bg-accent-50 max-[469px]:py-2.5"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-accent-500 bg-white px-3 py-2 text-xs font-semibold text-traditional-900 transition hover:bg-accent-50 sm:px-4 sm:py-2.5 sm:text-sm max-[469px]:px-3 max-[469px]:py-2 max-[469px]:text-[11px]"
           >
-            <Phone className="w-4 h-4 text-accent-600" />
+            <Phone className="w-3.5 h-3.5 text-accent-600 sm:w-4 sm:h-4" />
             Call
           </a>
           <a
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-green-500/20 transition hover:from-green-600 hover:to-emerald-600 max-[469px]:py-2.5"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-green-500 to-emerald-500 px-3 py-2 text-xs font-semibold text-white shadow-lg shadow-green-500/20 transition hover:from-green-600 hover:to-emerald-600 sm:px-4 sm:py-2.5 sm:text-sm max-[469px]:px-3 max-[469px]:py-2 max-[469px]:text-[11px]"
           >
-            <FaWhatsapp className="h-4 w-4" />
+            <FaWhatsapp className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             WhatsApp
           </a>
         </div>

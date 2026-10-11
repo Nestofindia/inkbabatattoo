@@ -716,22 +716,22 @@ const GalleryPreview: React.FC = () => {
       
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <motion.div 
-          className="text-center mb-10 sm:mb-16 md:mb-20 max-[469px]:mb-5"
+          className="mb-10 text-center sm:mb-16 md:mb-20 max-[469px]:mb-5"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex items-center justify-center gap-2 mb-4 sm:mb-6">
-            <div className="w-8 sm:w-12 h-px bg-traditional-400"></div>
-            <Eye className="w-5 h-5 sm:w-6 sm:h-6 text-accent-500" />
-            <div className="w-8 sm:w-12 h-px bg-traditional-400"></div>
+          <div className="mb-4 flex items-center justify-center gap-2 sm:mb-6">
+            <div className="h-px w-12 bg-traditional-400" />
+            <Eye className="h-6 w-6 text-accent-500" />
+            <div className="h-px w-12 bg-traditional-400" />
           </div>
-          
-          <h2 className="text-3xl sm:text-4xl md:text-5xl max-[469px]:text-2xl font-special font-bold mb-4 sm:mb-6 max-[469px]:mb-2 text-traditional-900">
-            Featured <span className="font-logo font-condensed-bold text-accent-600">Works</span>
+
+          <h2 className="mb-4 text-3xl font-special font-bold text-traditional-900 sm:mb-6 sm:text-4xl md:text-5xl max-[469px]:mb-2 max-[469px]:text-2xl">
+            Our <span className="font-logo font-condensed-bold text-accent-600">Works</span>
           </h2>
-          <p className="">
+          <p className="mx-auto max-w-3xl px-2 text-base leading-relaxed text-traditional-600 sm:text-xl">
             These are the stories our clients have trusted us with, each tattoo carrying their memories, milestones, and personal journeys.
           </p>
         </motion.div>
