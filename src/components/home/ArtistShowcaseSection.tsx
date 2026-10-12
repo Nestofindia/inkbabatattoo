@@ -59,25 +59,6 @@ const ArtistShowcaseSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="mb-6 flex items-center justify-center gap-2">
-          <button
-            type="button"
-            onClick={() => scrollCarousel('left')}
-            aria-label="Scroll artists left"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-traditional-200 bg-white text-traditional-800 shadow-soft transition hover:border-accent-300 hover:text-accent-700"
-          >
-            <ChevronLeft className="h-5 w-5" />
-          </button>
-          <button
-            type="button"
-            onClick={() => scrollCarousel('right')}
-            aria-label="Scroll artists right"
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-traditional-200 bg-white text-traditional-800 shadow-soft transition hover:border-accent-300 hover:text-accent-700"
-          >
-            <ChevronRight className="h-5 w-5" />
-          </button>
-        </div>
-
         <div
           ref={scrollRef}
           className="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-3 scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
@@ -115,6 +96,25 @@ const ArtistShowcaseSection: React.FC = () => {
               </Link>
             );
           })}
+        </div>
+
+        <div className="mt-6 flex items-center justify-center gap-2">
+          <button
+            type="button"
+            onClick={() => scrollCarousel('left')}
+            aria-label="Scroll artists left"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-traditional-200 bg-white text-traditional-800 shadow-soft transition hover:border-accent-300 hover:text-accent-700"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scrollCarousel('right')}
+            aria-label="Scroll artists right"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-traditional-200 bg-white text-traditional-800 shadow-soft transition hover:border-accent-300 hover:text-accent-700"
+          >
+            <ChevronRight className="h-5 w-5" />
+          </button>
         </div>
       </div>
     </section>

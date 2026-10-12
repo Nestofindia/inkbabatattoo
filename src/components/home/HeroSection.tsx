@@ -24,15 +24,15 @@ const HeroSection: React.FC = () => {
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-24 pt-16 sm:px-6 lg:px-8">
-        <div className="max-w-2xl text-left">
-          <h1 className="max-w-xl font-special text-4xl font-bold leading-[0.95] text-white sm:text-5xl md:text-6xl lg:text-7xl">
-            Best Tattoo Studio for <span className="text-accent-300">Custom Tattoo Designs</span> & Creative Ink Art.
+        <div className="max-w-2xl text-left sm:text-left md:text-left lg:text-left xl:text-left [&>*]:mx-auto md:[&>*]:mx-0">
+          <h1 className="max-w-xl font-special text-4xl font-bold leading-[0.95] text-white text-center sm:text-5xl md:text-left md:text-6xl lg:text-7xl">
+            Premium Tattoo Studio for <span className="text-accent-300">Custom Tattoo</span>
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-relaxed text-warm-100/80 sm:text-lg">
-            Discover expert tattoo artists, custom designs, and professional tattooing experiences created around your personal style and story.
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-warm-100/80 text-center sm:text-lg md:text-left">
+            Expert Artists, Unique Styles, and Personalised Tattoo Experiences in Goa.
           </p>
 
-          <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:items-center md:items-start md:justify-start">
             <a
               href={WHATSAPP_URL}
               target="_blank"

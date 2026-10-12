@@ -93,7 +93,7 @@ const Footer: React.FC = () => {
                   About Us
                 </Link>
               </li>
-              <li>
+                 {/* <li>
                 <Link 
                   href="/tattoo-studio-in-goa" 
                   className="text-traditional-600 hover:text-accent-500 transition-colors duration-300 flex items-center gap-3 text-lg group font-body"
@@ -128,7 +128,7 @@ const Footer: React.FC = () => {
                   <span className="w-2 h-2 bg-accent-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span> 
                   Best Tattoo Artist in Goa
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link 
                   href="/gallery" 
