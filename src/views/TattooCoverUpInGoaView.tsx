@@ -154,6 +154,7 @@ const TattooCoverUpInGoaView: React.FC = () => {
             >
               Discuss Your Cover-Up
             </a>
+            
             <a
               href={WHATSAPP_URL}
               target="_blank"
