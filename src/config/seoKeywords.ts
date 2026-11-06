@@ -172,6 +172,7 @@ export type SeoKeywordPage =
   | 'tattoo-care'
   | 'piercing-care'
   | 'terms'
+  | 'privacy'
   | 'artist'
   | 'category'
   | '404';
@@ -250,6 +251,12 @@ const PAGE_KEYWORD_EXTRAS: Record<SeoKeywordPage, readonly string[]> = {
     'piercing care Goa studio',
   ],
   terms: ['tattoo cancellation policy', 'studio liability tattoo'],
+  privacy: [
+    'tattoo studio privacy policy Goa',
+    'tattoo booking data privacy',
+    'client information protection India',
+    'tattoo studio GDPR privacy',
+  ],
   artist: ['book tattoo artist Goa', 'artist portfolio Ink Baba'],
   category: ['tattoo style specialists Goa'],
   '404': ['Ink Baba tattoo house'],
