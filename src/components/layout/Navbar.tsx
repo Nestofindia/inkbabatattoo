@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [workDropdownOpen, setWorkDropdownOpen] = useState(false);
-  // const [workDropdownOpenService, setWorkDropdownOpenService] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
 
   const useDarkNav = !isHomePage || scrolled;
 
@@ -35,13 +35,13 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     setIsOpen(false);
     setWorkDropdownOpen(false);
-    // setWorkDropdownOpenService(false);
+    setServicesDropdownOpen(false);
   }, [pathname]);
 
   const closeMenu = () => {
     setIsOpen(false);
     setWorkDropdownOpen(false);
-    // setWorkDropdownOpenService(false);
+    setServicesDropdownOpen(false);
   };
 
   const linkColor = useDarkNav
@@ -102,9 +102,61 @@ const Navbar: React.FC = () => {
             Our Story
           </Link>
 
-          <Link href="/testimonials" className={navLinkClasses(pathname === '/testimonials')}>
-            Review
-          </Link>
+          <div className="relative">
+            <button
+              type="button"
+              className={dropdownBtnClass(servicesDropdownOpen)}
+              onMouseEnter={() => setServicesDropdownOpen(true)}
+              onMouseLeave={() => setServicesDropdownOpen(false)}
+              aria-expanded={servicesDropdownOpen}
+            >
+              Services
+              <ChevronDown
+                size={18}
+                className={`shrink-0 transition-transform duration-300 ${
+                  servicesDropdownOpen ? 'rotate-180' : ''
+                }`}
+              />
+            </button>
+            <div
+              className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border border-warm-200 py-1 transition-all duration-200 ${
+                servicesDropdownOpen
+                  ? 'opacity-100 visible translate-y-0'
+                  : 'opacity-0 invisible -translate-y-1'
+              }`}
+              onMouseEnter={() => setServicesDropdownOpen(true)}
+              onMouseLeave={() => setServicesDropdownOpen(false)}
+            >
+              <Link
+                href="/tattoo-studio-in-goa"
+                className="block px-4 py-2.5 text-traditional-700 hover:bg-accent-50 hover:text-accent-600 font-semibold font-heading font-condensed-semibold transition-colors border-b border-warm-100"
+                onClick={() => setServicesDropdownOpen(false)}
+              >
+                Tattoo Studio in Goa
+              </Link>
+              <Link
+                href="/tattoo-cover-up-in-goa"
+                className="block px-4 py-2.5 text-traditional-700 hover:bg-accent-50 hover:text-accent-600 font-semibold font-heading font-condensed-semibold transition-colors border-b border-warm-100"
+                onClick={() => setServicesDropdownOpen(false)}
+              >
+                Tattoo Cover-Up in Goa
+              </Link>
+              <Link
+                href="/body-piercing-in-goa"
+                className="block px-4 py-2.5 text-traditional-700 hover:bg-accent-50 hover:text-accent-600 font-semibold font-heading font-condensed-semibold transition-colors border-b border-warm-100"
+                onClick={() => setServicesDropdownOpen(false)}
+              >
+                Body Piercing in Goa
+              </Link>
+              <Link
+                href="/best-tattoo-artist-in-goa"
+                className="block px-4 py-2.5 text-traditional-700 hover:bg-accent-50 hover:text-accent-600 font-semibold font-heading font-condensed-semibold transition-colors"
+                onClick={() => setServicesDropdownOpen(false)}
+              >
+                Best Tattoo Artist in Goa
+              </Link>
+            </div>
+          </div>
 
           <div className="relative">
             <button
@@ -147,50 +199,6 @@ const Navbar: React.FC = () => {
               </Link>
             </div>
           </div>
-
-          {/* Services — hidden for now
-          <div className="relative">
-            <button
-              type="button"
-              className={dropdownBtnClass(workDropdownOpenService)}
-              onMouseEnter={() => setWorkDropdownOpenService(true)}
-              onMouseLeave={() => setWorkDropdownOpenService(false)}
-              aria-expanded={workDropdownOpenService}
-            >
-              Services
-              <ChevronDown
-                size={18}
-                className={`shrink-0 transition-transform duration-300 ${
-                  workDropdownOpenService ? 'rotate-180' : ''
-                }`}
-              />
-            </button>
-            <div
-              className={`absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-warm-200 py-1 transition-all duration-200 ${
-                workDropdownOpenService
-                  ? 'opacity-100 visible translate-y-0'
-                  : 'opacity-0 invisible -translate-y-1'
-              }`}
-              onMouseEnter={() => setWorkDropdownOpenService(true)}
-              onMouseLeave={() => setWorkDropdownOpenService(false)}
-            >
-              <Link
-                href="/tattoo-services"
-                className="block px-4 py-2.5 text-traditional-700 hover:bg-accent-50 hover:text-accent-600 font-semibold font-heading font-condensed-semibold transition-colors border-b border-warm-100"
-                onClick={() => setWorkDropdownOpenService(false)}
-              >
-                Tattoo Services
-              </Link>
-              <Link
-                href="/piercing-services"
-                className="block px-4 py-2.5 text-traditional-700 hover:bg-accent-50 hover:text-accent-600 font-semibold font-heading font-condensed-semibold transition-colors"
-                onClick={() => setWorkDropdownOpenService(false)}
-              >
-                Piercing Services
-              </Link>
-            </div>
-          </div>
-          */}
 
           <a
             href={WHATSAPP_URL}
@@ -239,9 +247,51 @@ const Navbar: React.FC = () => {
             Our Story
           </Link>
 
-          <Link href="/testimonials" className={navLinkClassesMobile(pathname === '/testimonials')} onClick={closeMenu}>
-            Review
-          </Link>
+          <div>
+            <button
+              type="button"
+              className={`${NAV_LINK} w-full justify-between text-traditional-700 hover:text-accent-600`}
+              onClick={() => setServicesDropdownOpen((v) => !v)}
+            >
+              Services
+              <ChevronDown
+                size={18}
+                className={servicesDropdownOpen ? 'rotate-180 transition-transform' : 'transition-transform'}
+              />
+            </button>
+            {servicesDropdownOpen && (
+              <div className="mt-2 ml-4 flex flex-col gap-2 border-l-2 border-accent-300 pl-4">
+                <Link
+                  href="/tattoo-studio-in-goa"
+                  className="text-traditional-600 hover:text-accent-600 font-semibold font-heading font-condensed-semibold"
+                  onClick={closeMenu}
+                >
+                  Tattoo Studio in Goa
+                </Link>
+                <Link
+                  href="/tattoo-cover-up-in-goa"
+                  className="text-traditional-600 hover:text-accent-600 font-semibold font-heading font-condensed-semibold"
+                  onClick={closeMenu}
+                >
+                  Tattoo Cover-Up in Goa
+                </Link>
+                <Link
+                  href="/body-piercing-in-goa"
+                  className="text-traditional-600 hover:text-accent-600 font-semibold font-heading font-condensed-semibold"
+                  onClick={closeMenu}
+                >
+                  Body Piercing in Goa
+                </Link>
+                <Link
+                  href="/best-tattoo-artist-in-goa"
+                  className="text-traditional-600 hover:text-accent-600 font-semibold font-heading font-condensed-semibold"
+                  onClick={closeMenu}
+                >
+                  Best Tattoo Artist in Goa
+                </Link>
+              </div>
+            )}
+          </div>
 
           <div>
             <button
@@ -274,42 +324,6 @@ const Navbar: React.FC = () => {
               </div>
             )}
           </div>
-
-          {/* Services — hidden for now
-          <div>
-            <button
-              type="button"
-              className={`${NAV_LINK} w-full justify-between text-traditional-700 hover:text-accent-600`}
-              onClick={() => setWorkDropdownOpenService((v) => !v)}
-            >
-              Services
-              <ChevronDown
-                size={18}
-                className={
-                  workDropdownOpenService ? 'rotate-180 transition-transform' : 'transition-transform'
-                }
-              />
-            </button>
-            {workDropdownOpenService && (
-              <div className="mt-2 ml-4 flex flex-col gap-2 border-l-2 border-accent-300 pl-4">
-                <Link
-                  href="/tattoo-services"
-                  className="text-traditional-600 hover:text-accent-600 font-semibold font-heading font-condensed-semibold"
-                  onClick={closeMenu}
-                >
-                  Tattoo Services
-                </Link>
-                <Link
-                  href="/piercing-services"
-                  className="text-traditional-600 hover:text-accent-600 font-semibold font-heading font-condensed-semibold"
-                  onClick={closeMenu}
-                >
-                  Piercing Services
-                </Link>
-              </div>
-            )}
-          </div>
-          */}
 
           <a
             href={WHATSAPP_URL}

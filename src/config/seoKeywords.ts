@@ -265,7 +265,8 @@ export function getPageKeywords(
   page: SeoKeywordPage,
   extra: string[] = []
 ): string {
-  const extras = PAGE_KEYWORD_EXTRAS[page];
+  const pageExtras = PAGE_KEYWORD_EXTRAS[page] ?? [];
+  const extraKeywords = Array.isArray(extra) ? extra : [];
   const sliceStart =
     page === 'home' ? 0 : Math.abs(hashPage(page)) % 40;
   const masterSlice =
@@ -273,7 +274,7 @@ export function getPageKeywords(
       ? [...SEO_KEYWORDS_MASTER]
       : SEO_KEYWORDS_MASTER.slice(sliceStart, sliceStart + 45);
 
-  const combined = [...extra, ...extras, ...masterSlice];
+  const combined = [...extraKeywords, ...pageExtras, ...masterSlice];
   const unique = [...new Set(combined.map((k) => k.trim()).filter(Boolean))];
   return unique.join(', ');
 }

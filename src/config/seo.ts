@@ -225,12 +225,12 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
   },
   '/tattoo-studio-in-goa': {
     path: '/tattoo-studio-in-goa',
-    title: 'Best Tattoo Studio in Goa | Inkbaba | Custom Tattoos',
+    title: 'Best Tattoo Studio in Goa | Inkbaba Tattoo House',
     description:
-      'Inkbaba tattoo studio in Goa offers custom tattoos, cover-ups, and touch-ups with permanent artists and fair pricing. Free consultation. Walk-ins welcome.',
+      'Explore custom tattoos at Inkbaba Tattoo House, Arambol, Goa. Experienced artists, thoughtful design, careful execution and personalised guidance.',
     keywords:
-      'tattoo studio Goa, best tattoo studio Goa, custom tattoo Arambol, cover up tattoo Goa, touch up tattoo studio Goa, free consultation tattoo Arambol, hygienic tattoo studio Goa',
-    h1: 'Tattoo Studio in Goa | Inkbaba Tattoo House',
+      'best tattoo studio Goa, tattoo studio Arambol, custom tattoos Goa, expert tattoo artists Goa, personalised tattoo consultation Goa, hygienic tattoo studio Goa, tattoo house Arambol',
+    h1: 'Your Story, Our Art - Tattoo Studio in Goa',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'Tattoo Studio in Goa', path: '/tattoo-studio-in-goa' },
@@ -238,7 +238,7 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
     schemaType: 'WebPage',
     changefreq: 'monthly',
     priority: 0.9,
-    lastmod: '2026-10-11',
+    lastmod: '2026-11-06',
   },
   '/tattoo-cover-up-in-goa': {
     path: '/tattoo-cover-up-in-goa',
@@ -259,12 +259,12 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
   },
   '/body-piercing-in-goa': {
     path: '/body-piercing-in-goa',
-    title: 'Professional Body Piercing in Goa | Inkbaba | Expert Piercers',
+    title: 'Professional Piercing Studio in Goa | Inkbaba Arambol',
     description:
-      'Body piercing in Goa by experienced piercers. Single-use needles, sterile technique, proper jewelry, and honest aftercare guidance. Free consultation.',
+      'Ear, nose and navel piercings with sterile, single-use needles and honest advice. Start with a free consultation - no pressure to book. Inkbaba, Arambol.',
     keywords:
-      'body piercing Goa, ear piercing Goa, nose piercing Goa, cartilage piercing Goa, safe piercing Goa, expert piercer Goa, sterile body piercing Goa',
-    h1: 'Body Piercing in Goa | Inkbaba Tattoo House',
+      'body piercing Goa, ear piercing Goa, nose piercing Goa, navel piercing Goa, sterile piercing studio Arambol, safe piercing Goa, professional piercing studio Goa',
+    h1: 'Safe, Sterile Body Piercing: Professional Piercing Studio in Goa',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'Body Piercing in Goa', path: '/body-piercing-in-goa' },
@@ -272,16 +272,16 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
     schemaType: 'WebPage',
     changefreq: 'monthly',
     priority: 0.88,
-    lastmod: '2026-10-11',
+    lastmod: '2026-11-06',
   },
   '/best-tattoo-artist-in-goa': {
     path: '/best-tattoo-artist-in-goa',
-    title: 'Best Tattoo Artist in Goa | Award-Winning | Custom Designs | Inkbaba',
+    title: 'Tattoo Artists in Goa | Inkbaba Tattoo House',
     description:
-      'Internationally award-winning tattoo artist in Goa. Custom designs in realism, fine line work, and detailed styles. Professional consultation. Free touch-ups during healing.',
+      'Explore tattoo styles at Inkbaba Tattoo House, Arambol, Goa, with experienced artists and personalised design guidance.',
     keywords:
-      'best tattoo artist Goa, award winning tattoo artist Goa, custom tattoo artist Arambol, realism tattoo artist Goa, fine line tattoo artist Goa, professional tattoo consultation Goa',
-    h1: 'Finding the Right Tattoo Artist - It Matters',
+      'tattoo artists Goa, tattoo artist Arambol, custom tattoo design Goa, realistic tattoo artist Goa, geometric tattoo artist Goa, fine line tattoo Goa',
+    h1: 'Finding the Right Tattoo Artist In Goa - It Matters',
     breadcrumbs: [
       { name: 'Home', path: '/' },
       { name: 'Best Tattoo Artist in Goa', path: '/best-tattoo-artist-in-goa' },
@@ -289,7 +289,7 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
     schemaType: 'WebPage',
     changefreq: 'monthly',
     priority: 0.9,
-    lastmod: '2026-10-11',
+    lastmod: '2026-11-06',
   },
   '/blog': {
     path: '/blog',
@@ -423,6 +423,22 @@ export const PAGE_SEO: Record<string, PageSeoConfig> = {
     changefreq: 'yearly',
     priority: 0.5,
     lastmod: '2026-05-25',
+  },
+  '/privacy-policy': {
+    path: '/privacy-policy',
+    title: `Privacy Policy${suffix}`,
+    description:
+      'Read how Ink Baba Tattoo House handles personal information, design photos, booking details and cookies on our website and communications.',
+    keywords: getPageKeywords('privacy'),
+    h1: 'Privacy Policy',
+    breadcrumbs: [
+      { name: 'Home', path: '/' },
+      { name: 'Privacy Policy', path: '/privacy-policy' },
+    ],
+    schemaType: 'WebPage',
+    changefreq: 'yearly',
+    priority: 0.5,
+    lastmod: '2026-11-06',
   },
   '*': {
     path: '/404',

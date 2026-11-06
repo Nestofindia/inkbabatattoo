@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, BadgeCheck, Clock3, HeartHandshake, MapPinned, Palette, ShieldCheck, Sparkles, Users } from 'lucide-react';
+import { BadgeCheck, Clock3, HeartHandshake, MapPinned, Palette, ShieldCheck, Sparkles } from 'lucide-react';
 import PageTransition from '@/components/utils/PageTransition';
 import SectionHeader from '@/components/shared/SectionHeader';
 import LazyImage from '@/components/shared/LazyImage';
@@ -11,102 +11,77 @@ import { GOOGLE_MAPS_URL, SITE_PHONE_DISPLAY, WHATSAPP_URL } from '@/config/link
 
 const processSteps = [
   {
-    title: '1. Consultation',
+    title: '1. Consultation: Understanding Your Idea',
     text:
-      'We begin by listening to your idea, placement preferences and what matters to you in the long term. We explain what is possible, what will age well and what may need adjusting.',
+      'We start by discussing your idea, preferred style, reference images and intended placement. We’ll consider the size, body area and level of detail, then explain what is realistic for your design.',
   },
   {
-    title: '2. Creating the Design',
+    title: '2. Developing the Design',
     text:
-      'Once the brief is clear, we sketch, adapt and refine the concept based on your body, the area of placement and the style direction you want to explore.',
+      'Our team develops the design around your preferences and the practical needs of tattooing. Depending on the reference, we may recommend adjustments to the size, proportions, line weight or detail so the artwork works well on skin.',
   },
   {
-    title: '3. Stencil Approval',
+    title: '3. Placement and Stencil Approval',
     text:
-      'The stencil is placed on the skin before the tattoo starts. This is your opportunity to adjust placement and confirm the design before the needle is used.',
+      'Before tattooing begins, we apply a stencil so you can review the size, angle and placement. If adjustments are needed, discuss them with our team before approving the final position.',
   },
   {
     title: '4. The Tattoo Session',
     text:
-      'We work at a pace that matches your comfort and the complexity of the work. Larger pieces like sleeves are planned across multiple sessions to keep the quality high.',
+      'Once you’re comfortable with the design and placement, the session can begin. Discomfort varies depending on the placement, size, session length and individual pain tolerance.',
   },
 ];
 
-const artistGroups = [
+const styleCategories = [
   {
-    title: 'Realism & Portraiture',
-    artists: 'Adem Senturk, Mira Paramonova, Alex Belyakoff, Soy Dan',
+    title: 'Realism and Portrait Tattoos',
+    description:
+      'Realism focuses on creating lifelike images through shading, tonal transitions, detail and contrast. Portraits, animals and other subjects can be approached in black and grey or colour.',
   },
   {
-    title: 'Geometric & Mandala',
-    artists: 'Manu Garcia, Jessi James, Giada, Dana Sha, Jason Koifman',
+    title: 'Geometric and Mandala Tattoos',
+    description:
+      'Geometric tattoos use lines, shapes, symmetry and repetition to create structured compositions. Mandala designs often feature radial patterns and intricate detail.',
   },
   {
-    title: 'Ornamental & Decorative',
-    artists: 'Pallada, Alan Gog, Beve, Cloditta',
+    title: 'Ornamental and Decorative Tattoos',
+    description:
+      'Ornamental tattoos use decorative forms, flowing lines and repeating patterns to complement the body. The design can be developed around the chosen placement.',
   },
   {
-    title: 'Blackwork & Bold Designs',
-    artists: 'Madhav, Jason Koifman, Dana Avraham',
+    title: 'Blackwork and Bold Designs',
+    description:
+      'Blackwork uses black ink as the main visual element, ranging from bold graphic designs to intricate patterns and larger compositions. Contrast and negative space are important parts of the style.',
   },
   {
-    title: 'Hand Poke & Tribal',
-    artists: 'Mo Naga, Arne, Dasha Pictogram',
+    title: 'Hand-Poked and Tribal-Inspired Tattoos',
+    description:
+      'Hand-poked tattoos are created manually rather than with a powered tattoo machine. Tribal-inspired work can involve bold shapes, flowing patterns and strong contrasts.',
   },
   {
-    title: 'Dotwork',
-    artists: 'Jinn Tony, Dasha Pictogram',
+    title: 'Dotwork Tattoos',
+    description:
+      'Dotwork uses individual dots to create shading, texture, gradients and patterns. Dot spacing, contrast and design size require careful consideration, especially for intricate work.',
   },
   {
     title: 'Traditional Tattoos',
-    artists: 'YOGI, Niculin Gross, Dario D’Alessio, Alberto Balboa, Ash Harrison',
-  },
-  {
-    title: 'Japanese Tebori & Style',
-    artists: 'Akitsu Tomo, Vasil Kurakhchishvili',
-  },
-  {
-    title: 'Abstract Realism',
-    artists: 'Tassos Zach',
-  },
-  {
-    title: 'Unique Artistic Vision',
-    artists: 'Nikakun, Olga Koroleva, Stella',
-  },
-  {
-    title: 'Typography & Lettering',
-    artists: 'Manish Kadam, Pramod Deshmukh',
-  },
-  {
-    title: 'Minimalistic Fine-Line',
-    artists: 'Juliakay',
-  },
-];
-
-const reasons = [
-  {
-    icon: HeartHandshake,
-    title: 'Experience That Shows in the Work',
     description:
-      'At Inkbaba, we have been tattooing for over 20 years and working with clients from across India and around the world. That experience affects the quality of the result.',
+      'Traditional tattoo styles are known for bold outlines, clear shapes and strong colour or black-and-grey contrast. The composition needs to suit the body area and remain clear at the intended size.',
   },
   {
-    icon: Palette,
-    title: 'Planning for the Long Term',
+    title: 'Japanese-Style Tattoos and Tebori',
     description:
-      'We think about placement, line weight, contrast, detail and how the tattoo will age. The design should work over decades, not just on day one.',
+      'Japanese-style tattoos often use established motifs, flowing compositions and carefully balanced elements. Tebori is a traditional Japanese hand-tattooing technique that requires specific expertise.',
   },
   {
-    icon: Clock3,
-    title: 'Time, Comfort & Hygiene',
+    title: 'Abstract Realism, Bio-Organic and Trash Polka',
     description:
-      'We keep the process clear and respectful. Large work is planned across multiple sessions and we make sure the studio environment remains clean and comfortable.',
+      'These styles offer different approaches to more experimental tattooing, combining recognisable subjects with expressive forms and layered graphic compositions.',
   },
   {
-    icon: BadgeCheck,
-    title: 'Clear Pricing',
+    title: 'Fine-Line, Typography and Calligraphy',
     description:
-      'Tattoo pricing varies by design, artist, placement and time required. We discuss the estimate before starting so there are no surprises.',
+      'Fine-line tattoos use delicate lines and careful detail. Typography and lettering focus on the shape, spacing and readability of words, names, dates or quotes.',
   },
 ];
 
@@ -115,37 +90,49 @@ const artistFaqs = [
     id: 'pain',
     question: 'Does getting a tattoo hurt?',
     answer:
-      'Yes, there is some discomfort, but the experience depends on placement, tattoo size, session length and your own pain tolerance. Areas such as ribs and knees can be more sensitive than forearms or upper arms.',
+      'Tattooing involves some discomfort, but the experience varies between people and body areas. Placement, tattoo size, session length and individual pain tolerance can all affect how it feels. We can explain what to expect for your planned tattoo.',
   },
   {
-    id: 'bring-design',
+    id: 'design',
     question: 'Can I bring a design from the internet?',
     answer:
-      'Absolutely. Reference images are very useful. We assess whether the design will work at the chosen size and placement and may suggest adjustments so it suits your anatomy, style and long-term ageing.',
+      'Yes. Reference images are helpful for explaining what you like, whether that’s a particular style, subject, composition or detail. We’ll assess whether the design is suitable for your chosen size and placement.',
   },
   {
     id: 'age',
-    question: 'What is the minimum age for a tattoo?',
+    question: 'What is the minimum age for a tattoo at Inkbaba?',
     answer:
-      'We tattoo clients aged 18 and above, subject to valid identification and the studio requirements.',
-  },
-  {
-    id: 'cover-up',
-    question: 'Can you cover an old tattoo?',
-    answer:
-      'Many existing tattoos can be covered depending on their darkness, size, colour and condition. Please send clear photographs in natural daylight so we can assess what is realistic before recommending a direction.',
+      'Inkbaba tattoos clients aged 18 and above, subject to valid identification and the studio’s requirements. Please bring appropriate identification to your appointment.',
   },
   {
     id: 'swim',
     question: 'When can I swim after getting a tattoo?',
     answer:
-      'Avoid swimming and soaking the area until the skin is fully healed. This usually takes around two to four weeks, sometimes longer depending on the tattoo and how you heal.',
+      'Avoid swimming, soaking the tattoo or exposing it to conditions that could interfere with healing until the skin has fully healed. This often takes around two to four weeks, but it may take longer.',
   },
   {
     id: 'touch-up',
     question: 'Do you offer touch-ups?',
     answer:
-      'Touch-ups depend on how the tattoo heals and the original work. We explain our policy when confirming the booking and assess the healing before recommending adjustments.',
+      'Touch-up requirements depend on how the tattoo heals, the design and the original work. We’ll explain the studio’s touch-up policy when discussing your booking.',
+  },
+  {
+    id: 'style',
+    question: 'How do I choose the right tattoo style?',
+    answer:
+      'Start with the artwork you’re drawn to. Consider whether you prefer bold designs, delicate lines, realistic imagery, geometric patterns, lettering or a more experimental style.',
+  },
+  {
+    id: 'booking',
+    question: 'How far in advance should I book?',
+    answer:
+      'It’s best to contact us in advance, particularly if you’re travelling to Goa for a limited period or want a specialised style. Artist availability can change seasonally, so early contact gives us more opportunity to plan the consultation.',
+  },
+  {
+    id: 'prepare',
+    question: 'How should I prepare for a tattoo appointment?',
+    answer:
+      'Before your appointment, make sure you’ve discussed the design, placement and any relevant questions with the studio. Follow the preparation guidance provided when booking, and let the team know about any concerns that may affect your session.',
   },
 ];
 
@@ -156,7 +143,7 @@ const BestTattooArtistInGoaView: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <LazyImage
             src="https://images.pexels.com/photos/5708072/pexels-photo-5708072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Best tattoo artist in Goa"
+            alt="Tattoo artists in Goa"
             className="absolute inset-0 h-full w-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-pastel-100/90 via-warm-100/80 to-accent-100/90" />
@@ -170,10 +157,23 @@ const BestTattooArtistInGoaView: React.FC = () => {
 
         <div className="relative z-10 container mx-auto px-4 md:px-8">
           <SectionHeader
-            title="Best Tattoo Artist in Goa"
-            subtitle="Custom designs, artistic precision, and thoughtful consultation guided by experience and long-term planning."
+            title="Finding the Right Tattoo Artist In Goa - It Matters"
+            subtitle="A tattoo is personal, and good work starts with understanding your idea. At Inkbaba Tattoo House in Arambol, Goa, our expert artists help you explore designs, styles and placement to suit your vision."
             accent="gallery"
           />
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm font-medium text-traditional-700 md:text-base">
+            {[
+              'Experienced Tattoo Artists',
+              'Custom Design Consultation',
+              'Thoughtful Tattoo Placement',
+              'Clear Pricing Guidance',
+            ].map((item) => (
+              <span key={item} className="rounded-full border border-traditional-300 bg-white/80 px-4 py-2 shadow-sm">
+                {item}
+              </span>
+            ))}
+          </div>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
@@ -182,11 +182,16 @@ const BestTattooArtistInGoaView: React.FC = () => {
               rel="noopener noreferrer"
               className="btn-primary text-base"
             >
-              Book Free Consultation
+              Discuss Your Tattoo
             </a>
-            <Link href="/gallery" className="inline-flex items-center justify-center rounded-full border border-traditional-300 bg-white/70 px-6 py-3 text-base font-semibold text-traditional-800 transition hover:border-accent-300 hover:text-accent-600">
-              View Portfolio
-            </Link>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-traditional-300 bg-white/70 px-6 py-3 text-base font-semibold text-traditional-800 transition hover:border-accent-300 hover:text-accent-600"
+            >
+              Message Us on WhatsApp
+            </a>
           </div>
         </div>
       </section>
@@ -194,59 +199,10 @@ const BestTattooArtistInGoaView: React.FC = () => {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            title="Finding the Right Tattoo Artist - It Matters"
-            subtitle="A tattoo is permanent, so the artist behind it matters as much as the design itself."
+            title="The Tattoo Design Process"
+            subtitle="A thoughtful tattoo begins with understanding, planning and a clear conversation about what you want."
             centered={false}
             accent="about"
-          />
-
-          <div className="grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-            <div className="space-y-6 text-lg leading-relaxed text-traditional-700">
-              <p>
-                A tattoo is permanent. It sits on your body. It ages with you. The difference between a good tattoo and a poor one is not just about the design you bring in. It is about the artist who puts it on your skin.
-              </p>
-              <p>
-                The right artist listens, asks questions about placement and meaning, and considers how your body moves and changes over time. They understand that what looks good on paper does not always work the same way on skin.
-              </p>
-              <p>
-                At Inkbaba, we have been tattooing for over 20 years, winning awards in international competitions and working with clients from across India and beyond. Most people come because someone they know got a tattoo here and could not stop talking about it.
-              </p>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-              <div className="rounded-3xl border border-accent-200 bg-accent-50 p-6">
-                <div className="mb-3 inline-flex rounded-2xl bg-white p-3 text-accent-600 shadow-sm">
-                  <BadgeCheck className="h-5 w-5" />
-                </div>
-                <div className="text-3xl font-bold text-traditional-900">20+</div>
-                <p className="mt-2 text-traditional-600">Years of tattooing expertise</p>
-              </div>
-              <div className="rounded-3xl border border-traditional-200 bg-traditional-50 p-6">
-                <div className="mb-3 inline-flex rounded-2xl bg-white p-3 text-traditional-700 shadow-sm">
-                  <MapPinned className="h-5 w-5" />
-                </div>
-                <div className="text-3xl font-bold text-traditional-900">Global</div>
-                <p className="mt-2 text-traditional-600">Artists and clients from across the world</p>
-              </div>
-              <div className="rounded-3xl border border-traditional-200 bg-traditional-50 p-6 sm:col-span-2 lg:col-span-1 xl:col-span-2">
-                <div className="mb-3 inline-flex rounded-2xl bg-white p-3 text-accent-600 shadow-sm">
-                  <ShieldCheck className="h-5 w-5" />
-                </div>
-                <p className="text-base leading-relaxed text-traditional-600">
-                  Good work depends on consultation, technical skill and a design that lasts well over time.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gradient-to-br from-pastel-100 via-warm-100 to-accent-100 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            title="The Design Process"
-            subtitle="A clear and collaborative process that keeps the design, the placement and the client’s comfort in focus."
-            accent="process"
           />
 
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -266,40 +222,88 @@ const BestTattooArtistInGoaView: React.FC = () => {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
-            title="Our International Artist Collective"
-            subtitle="A global roster of specialists, each bringing expertise in a different style and artistic approach."
-            accent="difference"
-          />
-
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {artistGroups.map(({ title, artists }) => (
-              <div key={title} className="rounded-[2rem] border border-traditional-200 bg-traditional-50 p-6">
-                <h3 className="mb-3 text-2xl font-heading text-traditional-900">{title}</h3>
-                <p className="text-base leading-relaxed text-traditional-600">{artists}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-gradient-to-br from-pastel-100 via-warm-100 to-accent-100 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            title="What Makes Inkbaba Different"
-            subtitle="Thoughtful consultation, strong technical standards and a studio built for long-term satisfaction."
+            title="Tattoo Styles at Inkbaba"
+            subtitle="Choosing a tattoo artist starts with finding a style that suits your idea. Our studio works across a range of tattoo styles and specialisms, with artist availability varying throughout the year."
             accent="styles"
           />
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {reasons.map(({ icon: Icon, title, description }) => (
-              <div key={title} className="rounded-[2rem] border border-traditional-200 bg-white p-6 shadow-[0_14px_35px_rgba(18,18,18,0.04)]">
-                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-accent-100 text-accent-600">
-                  <Icon className="h-6 w-6" />
-                </div>
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-2">
+            {styleCategories.map(({ title, description }) => (
+              <div key={title} className="rounded-[2rem] border border-traditional-200 bg-traditional-50 p-7">
                 <h3 className="mb-3 text-2xl font-heading text-traditional-900">{title}</h3>
                 <p className="text-base leading-relaxed text-traditional-600">{description}</p>
               </div>
             ))}
+          </div>
+
+          <div className="mt-8 flex justify-center">
+            <Link href="/gallery" className="btn-primary text-base">
+              Explore Tattoo Styles with Our Team
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeader
+            title="Designing a Tattoo That Ages Well"
+            subtitle="A tattoo should work for you now and remain as clear as possible as your skin changes over time."
+            accent="difference"
+          />
+
+          <div className="rounded-[2rem] border border-traditional-200 bg-pastel-100 p-7">
+            <ul className="space-y-4 text-lg leading-relaxed text-traditional-700">
+              <li><strong>Placement and body proportions:</strong> How the design fits the chosen area and follows its natural shape.</li>
+              <li><strong>Line weight and contrast:</strong> Whether the outlines and details suit the intended size.</li>
+              <li><strong>Level of detail:</strong> Whether fine elements have enough space to remain readable.</li>
+              <li><strong>Composition:</strong> How the individual elements work together as a complete design.</li>
+              <li><strong>Long-term readability:</strong> Whether the design may benefit from simplifying or adjusting certain details.</li>
+            </ul>
+            <p className="mt-6 text-lg leading-relaxed text-traditional-700">
+              Sometimes, the best approach is to adapt a reference rather than reproduce it exactly. We’ll explain why a change may be helpful so you can make an informed decision.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeader
+            title="Hygiene, Comfort and Your Tattoo Session"
+            subtitle="A professional tattoo experience should give you clear information about the process, time to ask questions and the opportunity to discuss any concerns before your session."
+            accent="about"
+          />
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            <div className="rounded-[2rem] border border-traditional-200 bg-traditional-50 p-7 text-base leading-relaxed text-traditional-600">
+              At Inkbaba, we want you to feel comfortable raising questions about hygiene, equipment, pain, breaks and what to expect. We’ll explain the process and the practical considerations for your particular tattoo.
+            </div>
+            <div className="rounded-[2rem] border border-traditional-200 bg-traditional-50 p-7 text-base leading-relaxed text-traditional-600">
+              Larger tattoos may need multiple appointments, with suitable time for healing between sessions. We can also discuss privacy if you would prefer a more private space during your visit.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-pastel-100 py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeader
+            title="Finding the Right Artist for Your Tattoo"
+            subtitle="The best starting point is the artwork and style you connect with. Look at examples of completed tattoos, consider the type of work involved and think about how closely the artist’s specialism matches your idea."
+            accent="faq"
+          />
+
+          <div className="rounded-[2rem] border border-traditional-200 bg-white p-7 text-lg leading-relaxed text-traditional-700">
+            <p>
+              At Inkbaba, artist availability can change throughout the year because some of our artists join the studio seasonally as guest artists. Many are based in Arambol during the December-to-February season, although availability varies.
+            </p>
+            <p className="mt-4">
+              If you have a particular style, travel date or specific artist in mind, contact us in advance. We can help you check availability and discuss the best way to plan your project.
+            </p>
+            <p className="mt-4">
+              You don’t need to have every detail figured out before getting in touch. A reference image, a general idea or a conversation about the style you like is enough to begin.
+            </p>
           </div>
         </div>
       </section>
@@ -308,7 +312,7 @@ const BestTattooArtistInGoaView: React.FC = () => {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <SectionHeader
             title="Frequently Asked Questions"
-            subtitle="Common questions we answer before the first consultation."
+            subtitle="The questions we hear most often before a tattoo consultation."
             accent="faq"
           />
 
@@ -320,11 +324,14 @@ const BestTattooArtistInGoaView: React.FC = () => {
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-8 rounded-[2rem] border border-white/10 bg-white/5 p-7 md:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-accent-200">Visit Us</p>
-              <h2 className="text-3xl font-special text-white md:text-4xl">Ink Baba Tattoo House</h2>
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.22em] text-accent-200">Visit Inkbaba Tattoo House</p>
+              <h2 className="text-3xl font-special text-white md:text-4xl">Arambol, North Goa</h2>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-warm-100/80 md:text-lg">
-                Khalcha Wada, Arambol, North Goa<br />
-                WhatsApp / Call: {SITE_PHONE_DISPLAY}
+                Inkbaba Tattoo House is located in Khalcha Wada, Arambol, North Goa, a short walk from Arambol Beach.<br />
+                <span className="mt-2 block">Whether you have a clear design in mind or want to explore different tattoo styles, get in touch to discuss your idea and arrange your visit.</span>
+                <span className="mt-2 block">Address: Khalcha Wada, Arambol, North Goa, Goa</span>
+                <span className="mt-2 block">WhatsApp / Call: {SITE_PHONE_DISPLAY}</span>
+                <span className="mt-2 block">Instagram: @inkbabatattoohouse</span>
               </p>
             </div>
 
@@ -335,7 +342,7 @@ const BestTattooArtistInGoaView: React.FC = () => {
                 rel="noopener noreferrer"
                 className="btn-primary text-base"
               >
-                Book on WhatsApp
+                Discuss Your Tattoo on WhatsApp
               </a>
               <a
                 href={GOOGLE_MAPS_URL}
